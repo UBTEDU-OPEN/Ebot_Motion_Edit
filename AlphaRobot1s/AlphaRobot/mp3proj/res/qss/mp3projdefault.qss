@@ -1,0 +1,421 @@
+﻿/****************** mp3proj模块 ****************/
+
+/************ main widget begin ************/
+QWidget#widgetTitleContainer
+{
+    border-image:url(:/res/images/bg_top.png) 2 repeat;
+    border:0px;
+    border-top-width:2px;
+}
+
+QLabel#labelMusicTitle
+{
+    padding-left: 12px;
+    background-color: #404040;
+    color: #d3d3d3;
+    font: 16px;
+}
+
+
+/************ main widget end ************/
+
+/************ mp3Container begin ************/
+
+QWidget#MainWidget
+{ 
+    background-color: #0e0e0e;
+}
+
+QWidget#mp3Container
+{
+    background-color: transparent;
+}
+
+/****** btnZoom begin ******/
+QPushButton#btnZoomOut
+{
+    background-color: transparent;
+    border: 0px;
+    qproperty-icon: url(:/res/images/btn_reduce.png);
+    qproperty-iconSize: 12px 12px;
+}
+
+QPushButton#btnZoomOut:hover
+{
+    border-image: url(:/res/images/btn_reduce_sel.png);
+    background-color: transparent;
+    border: 0px;
+    qproperty-icon: url(:/res/images/btn_reduce.png);
+    qproperty-iconSize: 12px 12px;
+}
+
+QPushButton#btnZoomOut:pressed
+{
+    border-image: none;
+    background-color: transparent;
+    border: 0px;
+    qproperty-icon: url(:/res/images/btn_reduce.png);
+    qproperty-iconSize: 12px 12px;
+}
+
+QPushButton#btnZoomIn
+{
+    background-color: transparent;
+    border: 0px;
+    qproperty-icon: url(:/res/images/btn_magnifier.png);
+    qproperty-iconSize: 12px 12px;
+}
+
+QPushButton#btnZoomIn:hover
+{
+    border-image: url(:/res/images/btn_reduce_sel.png);
+    background-color: transparent;
+    border: 0px;
+    qproperty-icon: url(:/res/images/btn_magnifier.png);
+    qproperty-iconSize: 12px 12px;
+}
+
+QPushButton#btnZoomIn:pressed
+{
+    border-image: none;
+    background-color: transparent;
+    border: 0px;
+    qproperty-icon: url(:/res/images/btn_magnifier.png);
+    qproperty-iconSize: 12px 12px;
+}
+
+/****** btnZoom end ******/
+
+QScrollBar:horizontal {
+    border: none;
+    background: #2e2e2e;
+    height: 20px;
+}
+
+QScrollBar::handle:horizontal
+{
+    background: rgb(100, 100, 100);
+    min-width: 20px;
+    height: 10px;
+    margin: 5px 1px 5px 1px;
+    border-radius: 3px;
+    border: none;
+}
+
+QScrollBar::add-line:horizontal {
+    border: none;
+    background: none;
+    width: 0px;
+    height: 0px;
+}
+
+QScrollBar::sub-line:horizontal {
+    border: none;
+    background: none;
+    width: 0px;
+    height: 0px;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none;
+}
+
+
+
+/************ mp3Container end ************/
+
+/************ widgetBtnContainer begin ************/
+
+QWidget#widgetBtnContainer
+{
+    background-color: #404040;
+}
+
+
+/****** btnAddMusci begin ******/
+QPushButton#btnAddMusic
+{
+    border-image: url(:/res/images/btn_music_nor.png);
+    background-color: transparent;
+    border: 0px;
+    font:16px;
+    color: #fee68a;
+    qproperty-icon: url(:/res/images/icon_addmusic.png);
+    qproperty-iconSize: 23px 19px;
+	padding: 3px;
+}
+
+QPushButton#btnAddMusic:hover
+{
+    border-image: url(:/res/images/btn_music_hl.png);
+    background-color: transparent;
+    border: 0px;
+    font:16px;
+    color: #fee68a;
+    qproperty-icon: url(:/res/images/icon_addmusic.png);
+    qproperty-iconSize: 23px 19px;
+}
+
+QPushButton#btnAddMusic:pressed
+{
+    border-image: url(:/res/images/btn_music_press.png);
+    background-color: transparent;
+    border: 0px;
+    font:16px;
+    color: #fee68a;
+    qproperty-icon: url(:/res/images/icon_addmusic.png);
+    qproperty-iconSize: 23px 19px;
+}
+QPushButton#btnAddMusic:disabled
+{
+    color: #a79761;
+}
+
+/****** btnAddMusci end ******/
+
+
+/****** btnDeleteMusci begin ******/
+QPushButton#btnDeleteMusic
+{
+    border-image: url(:/res/images/btn_modify_nor.png);
+    background-color: transparent;
+    border: 0px;
+    font:16px;
+    color: #d3d3d3;
+    qproperty-icon: url(:/res/images/icon_delete_music.png);
+    qproperty-iconSize: 16px 17px;
+	padding: 3px;
+}
+
+QPushButton#btnDeleteMusic:hover
+{
+    border-image: url(:/res/images/btn_modify_hl.png);
+    background-color: transparent;
+    border: 0px;
+    font:16px;
+    color: #d3d3d3;
+    qproperty-icon: url(:/res/images/icon_delete_music.png);
+    qproperty-iconSize: 16px 17px;
+}
+
+QPushButton#btnDeleteMusic:pressed
+{
+    border-image: url(:/res/images/btn_modify_press.png);
+    background-color: transparent;
+    border: 0px;
+    font:16px;
+    color: #d3d3d3;
+    qproperty-icon: url(:/res/images/icon_delete_music.png);
+    qproperty-iconSize: 16px 17px;
+}
+QPushButton#btnDeleteMusic:disabled
+{
+    color: #808080;
+}
+
+/****** btnDeleteMusci end ******/
+
+
+/****** label begin ******/
+QLabel#labelMusic
+{
+    border-image: url(:/res/images/icon_music.png);
+    background-color: transparent;
+    border: 0px;
+}
+
+QLabel#labelMotion
+{
+    border-image: url(:/res/images/icon_exercise.png);
+    background-color: transparent;
+    border: 0px;
+}
+/****** label end ******/
+
+/****** btnSimulate begin ******/
+QPushButton#playMP3
+{
+    border-image: url(:/res/images/btn_simulate_nor.png);
+    qproperty-icon: url(:/res/images/icon_play_simulate.png);
+    qproperty-iconSize: 11px 13px;
+}
+
+QPushButton#playMP3:hover
+{
+    border-image: url(:/res/images/btn_simulate_hl.png);
+    qproperty-icon: url(:/res/images/icon_play_simulate.png);
+    qproperty-iconSize: 11px 13px;
+}
+
+QPushButton#playMP3:pressed
+{
+    border-image: url(:/res/images/btn_simulate_press.png);
+    qproperty-icon: url(:/res/images/icon_play_simulate.png);
+    qproperty-iconSize: 11px 13px;
+}
+
+QPushButton#pauseMP3
+{
+    border-image: url(:/res/images/btn_simulate_nor.png);
+    qproperty-icon: url(:/res/images/icon_pause_simulate.png);
+    qproperty-iconSize: 11px 13px;
+}
+
+QPushButton#pauseMP3:hover
+{
+    border-image: url(:/res/images/btn_simulate_hl.png);
+    qproperty-icon: url(:/res/images/icon_pause_simulate.png);
+    qproperty-iconSize: 11px 13px;
+}
+
+QPushButton#pauseMP3:pressed
+{
+    border-image: url(:/res/images/btn_simulate_press.png);
+    qproperty-icon: url(:/res/images/icon_pause_simulate.png);
+    qproperty-iconSize: 11px 13px;
+}
+
+QPushButton#stopMP3
+{
+    border-image: url(:/res/images/btn_simulate_nor.png);
+    qproperty-icon: url(:/res/images/icon_stop_simulate.png);
+    qproperty-iconSize: 11px 11px;
+}
+
+QPushButton#stopMP3:hover
+{
+    border-image: url(:/res/images/btn_simulate_hl.png);
+    qproperty-icon: url(:/res/images/icon_stop_simulate.png);
+    qproperty-iconSize: 11px 11px;
+}
+
+QPushButton#stopMP3:pressed
+{
+    border-image: url(:/res/images/btn_simulate_press.png);
+    qproperty-icon: url(:/res/images/icon_stop_simulate.png);
+    qproperty-iconSize: 11px 11px;
+}
+
+QPushButton#playMotion
+{
+    border-image: url(:/res/images/btn_simulate_nor.png);
+    qproperty-icon: url(:/res/images/icon_play_simulate.png);
+    qproperty-iconSize: 11px 13px;
+}
+
+QPushButton#playMotion:hover
+{
+    border-image: url(:/res/images/btn_simulate_hl.png);
+    qproperty-icon: url(:/res/images/icon_play_simulate.png);
+    qproperty-iconSize: 11px 13px;
+}
+
+QPushButton#playMotion:pressed
+{
+    border-image: url(:/res/images/btn_simulate_press.png);
+    qproperty-icon: url(:/res/images/icon_play_simulate.png);
+    qproperty-iconSize: 11px 13px;
+}
+
+QPushButton#pauseMotion
+{
+    border-image: url(:/res/images/btn_simulate_nor.png);
+    qproperty-icon: url(:/res/images/icon_pause_simulate.png);
+    qproperty-iconSize: 11px 13px;
+}
+
+QPushButton#pauseMotion:hover
+{
+    border-image: url(:/res/images/btn_simulate_hl.png);
+    qproperty-icon: url(:/res/images/icon_pause_simulate.png);
+    qproperty-iconSize: 11px 13px;
+}
+
+QPushButton#pauseMotion:pressed
+{
+    border-image: url(:/res/images/btn_simulate_press.png);
+    qproperty-icon: url(:/res/images/icon_pause_simulate.png);
+    qproperty-iconSize: 11px 13px;
+}
+
+QPushButton#stopMotion
+{
+    border-image: url(:/res/images/btn_simulate_nor.png);
+    qproperty-icon: url(:/res/images/icon_stop_simulate.png);
+    qproperty-iconSize: 11px 11px;
+}
+
+QPushButton#stopMotion:hover
+{
+    border-image: url(:/res/images/btn_simulate_hl.png);
+    qproperty-icon: url(:/res/images/icon_stop_simulate.png);
+    qproperty-iconSize: 11px 11px;
+}
+
+QPushButton#stopMotion:pressed
+{
+    border-image: url(:/res/images/btn_simulate_press.png);
+    qproperty-icon: url(:/res/images/icon_stop_simulate.png);
+    qproperty-iconSize: 11px 11px;
+}
+/****** btnSimulate end ******/
+
+/****** 设置QProgressDialog start*****/
+
+QProgressDialog
+{
+    background: #404040;
+}
+
+QProgressBar
+{
+    border: none;
+    background-color: #484848;
+    text-align: center;
+    font: 14px;
+    color: #d3d3d3;
+}
+
+QProgressBar::chunk
+{
+    background-color: #17a9f4;
+}
+/****** 设置QProgressDialog End*****/
+
+QPushButton
+{
+    background:transparent;
+    font:14px;
+	min-height: 24px;
+	max-height: 24px;
+    color: #cfcfcf;
+}
+
+QPushButton:hover
+{
+    border-image: url(:/res/images/btn_add_file_hl.png);
+    font:14px;
+    color: #cfcfcf;
+}
+
+QPushButton:pressed
+{
+    border-image: url(:/res/images/btn_add_file_press.png);
+    font:14px;
+    color: #cfcfcf;
+}
+
+QLabel
+{
+    background: transparent;
+    color: #d3d3d3;
+    font: 12px;
+}
+
+/*********************设置导入音乐文件开始********************/
+CImportMP3Progress
+{
+    border-image: url(:/res/images/bg_login.png) 38px 16px 16px 16px repeat;
+    border-width: 38px 16px 16px 16px;
+}
+
+/*********************设置导入音乐文件结束*********************/

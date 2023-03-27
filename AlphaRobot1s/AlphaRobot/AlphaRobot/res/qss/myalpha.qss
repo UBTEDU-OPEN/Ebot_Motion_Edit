@@ -1,0 +1,279 @@
+﻿/****************** 我的机器人模块 ****************/
+CMyAlpha
+{
+    border-image: url(:/res/images/bg_login.png) 38px 16px 16px 16px repeat;
+    border-width: 38px 16px 16px 16px;
+}
+
+QLabel
+{
+    font: 12px;   
+    color: #d3d3d3;
+}
+
+QLabel#labFirmwareInfo, QLabel#labActionList
+{
+    font: 14px;   
+    color: #d3d3d3;
+}
+
+QLabel#label_title
+{
+    font: bold 14px;   
+    color: #5e5e5e;
+}
+
+QLabel#labAlaphaRobot
+{
+    padding-top: 24px;
+	padding-bottom: 48px;
+	padding-left: 24px;
+	padding-right: 48px;
+}
+
+/*更新按钮*/
+QPushButton#pbUpdate
+{
+    border-image: url(:/res/images/btn_update_press.png);
+    font:12px;
+    color: #d3d3d3;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+QPushButton#pbUpdate:hover
+{
+    border-image: url(:/res/images/btn_update_hl.png);
+}
+QPushButton#pbUpdate:pressed
+{
+    border-image: url(:/res/images/btn_update_press.png);
+}
+
+QPushButton#pbActionItemDelete
+{
+    background: transparent;
+	border-image: url(:/res/images/icon_download_delete.png);
+	width:16px;
+	height:16px;
+}
+
+QPushButton#pbActionItemDelete:pressed
+{
+    border-image: url(:/res/images/icon_download_delete_sel.png);
+}
+								
+/*删除按钮*/
+QPushButton#pbDelete
+{
+    background:transparent;
+    font:12px;
+    color: #d3d3d3;
+    border:3px solid transparent;
+    padding-left:8px;
+	padding-right:8px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+QPushButton#pbDelete:hover
+{
+    border-image: url(:/res/images/btn_all_actions_hl.png) 3 stretch;
+    font:12px;
+    color: #d3d3d3;
+    border:3px;
+}
+QPushButton#pbDelete:pressed
+{
+    border-image: url(:/res/images/btn_all_actions_press.png) 3 stretch;
+    font:12px;
+    color: #d3d3d3;
+    border:3px;
+}
+
+/*checkbox选择控件*/
+QCheckBox
+{
+    font: 12px;
+    color: #d3d3d3;
+    margin: 6px 0px 0px 6px;
+}
+
+QCheckBox#checkBox_selall
+{
+    font: 12px;
+    color: #d3d3d3;
+    margin: 6px 0px 0px 6px;
+}
+
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:/res/images/cb_icon_nor.png);
+}
+
+QCheckBox::indicator:unchecked:pressed {
+    image: url(:/res/images/cb_icon_select.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(:/res/images/cb_icon_select.png);
+}
+
+QCheckBox:disabled
+{
+    color: #808080;
+}
+
+/*动作列表*/
+QTableWidget#tableActionList
+{
+    background: transparent;
+    border: 1px solid #0d0d0d;
+    border-bottom-width: 0px;
+    selection-background-color: #5d5d5d;
+}
+
+QTableWidget#tableActionList::item:selected
+{
+    font:12px;
+    color: #d3d3d3;
+}
+
+QHeaderView
+{
+    background: transparent;
+    border: none;
+    border-bottom-width: 1px;
+    border-bottom-color: #0d0d0d;
+    border-bottom-style: solid;
+    font: 14px;
+    color: #d3d3d3;
+}
+
+QHeaderView::section
+{
+    border:none;
+    border-left-width: 1px;
+    border-left-color: #0d0d0d;
+    border-left-style: solid;
+    background-color: #505050;
+    padding-left: 8px;
+    font: 14px;
+    color: #d3d3d3;
+}
+
+/*滚动条*/
+QScrollBar:horizontal
+{
+    border: 1px solid #0d0d0d;
+    background: #404040;
+    height: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+QScrollBar::handle:horizontal
+{
+    background: rgb(100, 100, 100);
+    min-width: 20px;
+    height: 10px;
+    margin: 5px 1px 5px 1px;
+    border-radius: 3px;
+    border: none;
+}
+
+QScrollBar::add-line:horizontal
+{
+    border: 1px solid #0d0d0d;
+    width: 20px;
+    height: 20px;
+    subcontrol-position: right;
+}
+
+QScrollBar::sub-line:horizontal
+{
+    border: 1px solid #0d0d0d;
+    width: 20px;
+    height: 20px;
+    subcontrol-position: left;
+}
+QScrollBar::left-arrow:horizontal
+{
+    border:none;
+    background-image: url(:/res/images/icon_left.png) ;
+    width: 5px;
+    height: 7px;
+}
+QScrollBar::right-arrow:horizontal
+{
+    border:none;
+    background-image: url(:/res/images/icon_right.png) ;
+    width: 5px;
+    height: 7px;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none;
+}
+
+
+QScrollBar:vertical
+{
+    border: 1px solid #0d0d0d;
+    background: #404040;
+    width: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+QScrollBar::handle:vertical
+{
+    background: rgb(100, 100, 100);
+    min-height: 20px;
+    width: 10px;
+    margin: 1px 5px 1px 5px;
+    border-radius: 3px;
+    border: none;
+}
+
+QScrollBar::add-line:vertical
+{
+    border: 1px solid #0d0d0d;
+    width: 20px;
+    height: 20px;
+}
+
+QScrollBar::sub-line:vertical
+{
+    border: 1px solid #0d0d0d;
+    width: 20px;
+    height: 20px;
+}
+QScrollBar::up-arrow:vertical
+{
+    border:none;
+    background-image: url(:/res/images/icon_upward.png) ;
+    width: 7px;
+    height: 5px;
+}
+QScrollBar::down-arrow:vertical
+{
+    border:none;
+    background-image: url(:/res/images/icon_down.png) ;
+    width: 7px;
+    height: 5px;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+QWidget#widgetContainer
+{
+    border-image: url(:/res/images/bg_2.png) 1px 5px 5px 5px repeat;
+    border-width: 1px 5px 5px 5px;
+    background-color: transparent;
+}

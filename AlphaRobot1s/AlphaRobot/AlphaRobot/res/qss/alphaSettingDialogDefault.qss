@@ -1,0 +1,174 @@
+﻿/************DialogSetting start************/
+/*标题*/
+QLabel#labSettingTitle
+{
+    font: 20px;
+    color:#5E5E5E;
+    margin:0px;
+    border:0px;
+    min-height:30px;
+    text-align:center;
+}
+
+/*对话框*/
+SettingDialog#m_pSettingDialog
+{
+    background: transparent;
+    border-image: url(:/res/images/bg_login.png) 38px 16px 16px 16px repeat;
+    border-width: 38px 16px 16px 16px;
+}
+
+/*列表项*/
+QListWidget#m_plistWidget
+{
+    margin: 0px;
+    padding: 0px;
+    max-width: 100px;
+    min-width: 80px;
+    border: 0px solid #404040;
+	  background:#404040;
+}
+
+QListWidget#m_plistWidget::item 
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    height:30px;
+    color: #d3d3d3;
+}
+
+QListWidget#m_plistWidget::item:hover 
+{
+    border-image: url(:/res/images/btn_login_hl.png);
+    color: #d3d3d3;
+}
+
+QListView#m_plistWidget::item:selected
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    color: #d3d3d3;
+}
+
+/*stackwidget*/
+QStackedWidget#m_pStackWidget
+{
+   background: #404040;
+   border:0px solid #404040;
+}
+
+/*语言选择QComboBox*/
+QComboBox#pComboBoxLanguage
+{
+    border-left-width:0px;
+    border-right-width: 1px;
+    border-right-color: #070707;
+    border-right-style: solid;
+    border-top-width: 1px;
+    border-top-color: #070707;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #070707;
+    border-bottom-style: solid;
+    border-radius: 3px;
+    width: 120px;
+    height: 25px;
+    background: #9f9f9f;
+}
+
+QComboBox#pComboBoxLanguage::drop-down
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 18px;
+}
+
+QComboBox#pComboBoxLanguage QAbstractItemView
+{
+    selection-background-color: #9f9f9f;
+}
+
+/*关闭按钮*/                                                 
+QPushButton#pbSettingClose
+{
+    border-image: url(:/res/images/btn_close_login.png);
+}
+
+QPushButton#pbSettingClose:hover
+{
+    background-image: url(:/res/images/btn_close.png);
+    border-image: url(:/res/images/icon_close.png);
+}
+
+/*保存按钮*/
+QPushButton#pbSettingConform
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+QPushButton#pbSettingConform:hover
+{
+    border-image: url(:/res/images/btn_login_hl.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+QPushButton#pbSettingConform:checked
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+/*取消 按钮*/
+QPushButton#pbSettingCancel
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+QPushButton#pbSettingCancel:hover
+{
+    border-image: url(:/res/images/btn_login_hl.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+QPushButton#pbSettingCancel:checked
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+/*QMessageBox的OK按钮*/
+QPushButton
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    color: #d3d3d3;
+    width: 64px;
+    height: 25px;
+}
+
+QPushButton:hover
+{
+    border-image: url(:/res/images/btn_login_hl.png);
+    color: #d3d3d3;
+    width: 64px;
+    height: 25px;
+}
+
+QPushButton:checked
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    color: #d3d3d3;
+    width: 64px;
+    height: 25px;
+}
+
+QRadioButton#radioButtonChinese, QRadioButton#radioButtonEnglish
+{
+    background:transparent;
+    color: #d3d3d3;
+}
+/************DialogSetting end************/

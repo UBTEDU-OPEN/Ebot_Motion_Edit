@@ -1,0 +1,760 @@
+﻿/************common class begin************/
+
+
+
+/*******************AlphaRobot 模块*********************/
+
+/*MainWindowWidget*/
+MainWindowWidget
+{
+    background: #404040;
+}
+
+/************ Edit Tab begin ************/
+QDialog#CFilesSaveAsUI
+{
+    background: transparent;
+    border-image: url(:/res/images/bg_login.png) 38px 16px 16px 16px repeat;
+    border-width: 38px 16px 16px 16px;
+}
+
+QDialog#CDialogContainer
+{
+    background: transparent;
+    border-image: url(:/res/images/bg_login.png) 38px 16px 16px 16px repeat;
+    border-width: 38px 16px 16px 16px;
+}
+
+/*窗体标题栏背景*/
+QWidget#TitleBar
+{
+    background-image: url(:/res/images/nav_bg.png);
+    background-repeat: repeat-x;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/*窗体工具栏编辑按钮*/
+QPushButton#tbEdit
+{
+    background:transparent;
+    font:18px;
+    color: #5e5e5e;
+    qproperty-icon: url(:/res/images/icon_edit.png);
+    qproperty-iconSize: 18px 17px;
+    border:0px;
+}
+QPushButton#tbEdit:checked
+{
+    border-image: url(:/res/images/btn_nav0.png);
+    font:18px;
+    color: #f0f0f0;
+    qproperty-icon: url(:/res/images/icon_edit_sel.png);
+    qproperty-iconSize: 18px 17px;
+    border:0px;
+}
+
+/*工具栏动作库按钮*/
+QPushButton#tbActions
+{
+    background:transparent;
+    font:18px;
+    color: #5e5e5e;
+    qproperty-icon: url(:/res/images/icon_dzk.png);
+    qproperty-iconSize: 27px 24px;
+    border:0px;
+}
+QPushButton#tbActions:checked
+{
+    border-image: url(:/res/images/btn_nav0.png);
+    font:18px;
+    color: #f0f0f0;
+    qproperty-icon: url(:/res/images/icon_dzk_sel.png);
+    qproperty-iconSize: 27px 24px;
+    border:0px;
+}
+
+/*工具栏同步按钮*/
+QPushButton#tbSync
+{
+    background:transparent;
+    font:18px;
+    color: #5e5e5e;
+    qproperty-icon: url(:/res/images/icon_tb.png);
+    qproperty-iconSize: 27px 24px;
+    border:0px;
+}
+QPushButton#tbSync:checked
+{
+    border-image: url(:/res/images/btn_nav0.png);
+    font:18px;
+    color: #f0f0f0;
+    qproperty-icon: url(:/res/images/icon_tb_sel.png);
+    qproperty-iconSize: 27px 24px;
+    border:0px;
+} 
+
+QLabel#labelWelcome
+{
+    font: 16px;   
+    color: #b60d09;
+}
+
+/*登录注册按钮*/      
+QPushButton#pBUserLogin
+{
+    font: 16px;
+    color: ＃0096c2;     
+    border: 0px;
+    text-decoration: underline;
+}  
+
+QPushButton#pBUserLogin:hover    
+{    
+    color: #00aee0;
+}
+                  
+/*QPushButton#pBUserLogin
+{
+    border-image: url(:/res/images/btn_nav_press.png);
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pBUserLogin:hover
+{
+    border-image: url(:/res/images/btn_nav_hl.png);
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pBUserLogin:pressed
+{
+    border-image: url(:/res/images/btn_nav_press.png);
+    font:16px;
+    color: #cfcfcf;
+}
+*/
+
+/*编辑界面导航栏背景*/
+QWidget#widgetTBContainer
+{
+    border-image: url(:/res/images/edit_title_bg.png);
+    border:0px;
+}
+
+/*新建工程按钮*/
+QPushButton#pbNew
+{
+    background:transparent;
+    qproperty-icon: url(:/res/images/icon_build.png);
+    qproperty-iconSize: 17px 13px;
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pbNew:hover
+{
+    border-image: url(:/res/images/btn_nav_hl.png);
+    qproperty-icon: url(:/res/images/icon_build.png);
+    qproperty-iconSize: 17px 13px;
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pbNew:pressed
+{
+    border-image: url(:/res/images/btn_nav_press.png);
+    qproperty-icon: url(:/res/images/icon_build.png);
+    qproperty-iconSize: 17px 13px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+/*打开工程按钮*/
+QPushButton#pbOpen
+{
+    background:transparent;
+    qproperty-icon: url(:/res/images/icon_import.png);
+    qproperty-iconSize: 15px 15px;
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pbOpen:hover
+{
+    border-image: url(:/res/images/btn_nav_hl.png);
+    qproperty-icon: url(:/res/images/icon_import.png);
+    qproperty-iconSize: 15px 15px;
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pbOpen:pressed
+{
+    border-image: url(:/res/images/btn_nav_press.png);
+    qproperty-icon: url(:/res/images/icon_import.png);
+    qproperty-iconSize: 15px 15px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+/*打开与保存按钮分割线*/
+QLabel#labelOpenAndSave
+{
+    background-color:#4d4d4d;
+}
+
+/*保存按钮*/
+QPushButton#pbSave
+{
+    background:transparent;
+    qproperty-icon: url(:/res/images/icon_save.png);
+    qproperty-iconSize: 16px 13px;
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pbSave:hover
+{
+    border-image: url(:/res/images/btn_nav_hl.png);
+    qproperty-icon: url(:/res/images/icon_save.png);
+    qproperty-iconSize: 16px 13px;
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pbSave:pressed
+{
+    border-image: url(:/res/images/btn_nav_press.png);
+    qproperty-icon: url(:/res/images/icon_save.png);
+    qproperty-iconSize: 16px 13px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+/*另存为按钮*/
+QPushButton#pbSaveAs
+{
+    background:transparent;
+    qproperty-icon: url(:/res/images/icon_saveas.png);
+    qproperty-iconSize: 16px 14px;
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pbSaveAs:hover
+{
+    border-image: url(:/res/images/btn_nav_hl.png);
+    qproperty-icon: url(:/res/images/icon_saveas.png);
+    qproperty-iconSize: 16px 14px;
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pbSaveAs:pressed
+{
+    border-image: url(:/res/images/btn_nav_press.png);
+    qproperty-icon: url(:/res/images/icon_saveas.png);
+    qproperty-iconSize: 16px 14px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+/*undo按钮*/
+QPushButton#pbUndo
+{
+    background:transparent;
+    qproperty-icon: url(:/res/images/icon_undo.png);
+    qproperty-iconSize: 16px 14px;
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pbUndo:hover
+{
+    border-image: url(:/res/images/btn_nav_hl.png);
+    qproperty-icon: url(:/res/images/icon_undo.png);
+    qproperty-iconSize: 16px 14px;
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pbUndo:pressed
+{
+    border-image: url(:/res/images/btn_nav_press.png);
+    qproperty-icon: url(:/res/images/icon_undo.png);
+    qproperty-iconSize: 16px 14px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+/*redo按钮*/
+QPushButton#pbRedo
+{
+    background:transparent;
+    qproperty-icon: url(:/res/images/icon_redo.png);
+    qproperty-iconSize: 16px 14px;
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pbRedo:hover
+{
+    border-image: url(:/res/images/btn_nav_hl.png);
+    qproperty-icon: url(:/res/images/icon_redo.png);
+    qproperty-iconSize: 16px 14px;
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pbRedo:pressed
+{
+    border-image: url(:/res/images/btn_nav_press.png);
+    qproperty-icon: url(:/res/images/icon_redo.png);
+    qproperty-iconSize: 16px 14px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+/************ Edit Tab end ************/
+
+
+/************ Action Library Tab begin ************/
+
+/*动作库导航栏背景*/
+QWidget#widgetTBActionsContainer
+{
+    background-color:#626262;
+    border:0px;
+}
+
+/*动作库首页按钮*/
+QPushButton#pbHomePage
+{
+    background:transparent;
+    qproperty-icon: url(:/res/images/icon_home.png);
+    qproperty-iconSize: 15px 15px;
+    font:16px;
+    color: #cfcfcf;
+    padding:5px;
+}
+QPushButton#pbHomePage:hover
+{
+    border-image: url(:/res/images/btn_nav_hl.png);
+    qproperty-icon: url(:/res/images/icon_home.png);
+    qproperty-iconSize: 15px 15px;
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pbHomePage:checked
+{
+    border-image: url(:/res/images/btn_nav_press.png);
+    qproperty-icon: url(:/res/images/icon_home.png);
+    qproperty-iconSize: 15px 15px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+/*动作库 动作按钮*/
+QPushButton#pbActions
+{
+    background:transparent;
+    qproperty-icon: url(:/res/images/icon_action.png);
+    qproperty-iconSize: 14px 15px;
+    font:16px;
+    color: #cfcfcf;
+    padding:5px;
+}
+QPushButton#pbActions:hover
+{
+    border-image: url(:/res/images/btn_nav_hl.png);
+    qproperty-icon: url(:/res/images/icon_action.png);
+    qproperty-iconSize: 14px 15px;
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pbActions:checked
+{
+    border-image: url(:/res/images/btn_nav_press.png);
+    qproperty-icon: url(:/res/images/icon_action.png);
+    qproperty-iconSize: 14px 15px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+/*动作库 我的收藏按钮*/
+QPushButton#pbFavorites
+{
+    background:transparent;
+    qproperty-icon: url(:/res/images/icon_favorite.png);
+    qproperty-iconSize: 14px 14px;
+    font:16px;
+    color: #cfcfcf;
+    padding:5px;
+}
+QPushButton#pbFavorites:hover
+{
+    border-image: url(:/res/images/btn_nav_hl.png);
+    qproperty-icon: url(:/res/images/icon_favorite.png);
+    qproperty-iconSize: 14px 14px;
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pbFavorites:checked
+{
+    border-image: url(:/res/images/btn_nav_press.png);
+    qproperty-icon: url(:/res/images/icon_favorite.png);
+    qproperty-iconSize: 14px 14px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+/*动作库 my upload btn*/
+QPushButton#pbMyUpload
+{
+    background:transparent;
+    qproperty-icon: url(:/res/images/icon_myupload.png);
+    qproperty-iconSize: 14px 14px;
+    font:16px;
+    color: #cfcfcf;
+    padding:5px;
+}
+QPushButton#pbMyUpload:hover
+{
+    border-image: url(:/res/images/btn_nav_hl.png);
+    qproperty-icon: url(:/res/images/icon_myupload.png);
+    qproperty-iconSize: 14px 14px;
+    font:16px;
+    color: #cfcfcf;
+}
+QPushButton#pbMyUpload:checked
+{
+    border-image: url(:/res/images/btn_nav_press.png);
+    qproperty-icon: url(:/res/images/icon_myupload.png);
+    qproperty-iconSize: 14px 14px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+/*动作和我的收藏的分割线*/
+QLabel#labelActionAndFavor
+{
+    background-color:#4d4d4d;
+}
+
+/*下载列表按钮*/
+QPushButton#pbDownLoads
+{
+    background:transparent;
+    qproperty-icon: url(:/res/images/btn_download.png);
+    qproperty-iconSize: 18px 18px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+QPushButton#pbDownLoads:hover
+{
+    border-image: url(:/res/images/btn_nav_hl.png);
+    qproperty-icon: url(:/res/images/btn_download.png);
+    qproperty-iconSize: 14px 14px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+QPushButton#pbDownLoads:checked
+{
+    border-image: url(:/res/images/btn_nav_press.png);
+    qproperty-icon: url(:/res/images/btn_download.png);
+    qproperty-iconSize: 18px 18px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+QPushButton#pbDownLoads:pressed
+{
+    border-image: url(:/res/images/btn_nav_press.png);
+    qproperty-icon: url(:/res/images/btn_download.png);
+    qproperty-iconSize: 18px 18px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+/*动作上传按钮*/
+QPushButton#pushButton_actupload
+{
+    background:transparent;
+    qproperty-icon: url(:/res/images/icon_actions.png);
+    qproperty-iconSize: 18px 18px;
+    font:16px;
+    color: #fee68a;
+    padding:5px;
+}
+QPushButton#pushButton_actupload:hover
+{
+    border-image: url(:/res/images/btn_nav_hl.png);
+    qproperty-icon: url(:/res/images/icon_actions.png);
+    qproperty-iconSize: 14px 14px;
+    font:16px;
+    color: #fee68a;
+}
+QPushButton#pushButton_actupload:checked
+{
+    border-image: url(:/res/images/btn_nav_press.png);
+    qproperty-icon: url(:/res/images/icon_actions.png);
+    qproperty-iconSize: 18px 18px;
+    font:16px;
+    color: #fee68a;
+}
+/************ Action Library Tab end ************/
+
+
+
+/************ TabWidget begin ************/
+QWidget#tabEdit
+{
+    background: ＃262626;
+    border: 0px;
+}
+
+QWidget#tabActions
+{
+    background: ＃262626;
+    border: 0px;
+}
+
+QWidget#tabSyncing
+{
+    background: ＃262626;
+    border: 0px;
+}
+
+QTabWidget#tabWidget
+{
+    background: ＃262626;
+    border: 0px;
+}
+
+QTabWidget#tabWidget::tab-bar
+{
+    background: #626262;
+    width:0px;
+    height:0px;
+    border:0px;
+}
+
+QTabBar#tabWidget::tab
+{
+    background: #626262;
+    border:0px;
+    width:0px;
+    height:0px;
+}
+
+/************ TabWidget end ************/
+
+/************DialogAbout begin************/
+QDialog#DialogAbout
+{
+    background-color:rgb(232, 232, 232);
+}
+
+QLabel#label_appname
+{
+    color: #5e5e5e;
+    font: 16px;
+}
+QLabel#label_version
+{
+    color: #5e5e5e;
+    font: 16px;
+}
+QLabel#label_company
+{
+    color: #5e5e5e;
+    font: 16px;
+}
+QLabel#label_copyright
+{
+    color: #5e5e5e;
+    font: 16px;
+}
+
+QPushButton#pushButton
+{
+    border-image: url(:/res/images/btn_insert_hl.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+QPushButton#pushButton:hover
+{
+    border-image: url(:/res/images/btn_insert_nor.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+QPushButton#pushButton:pressed
+{
+    border-image: url(:/res/images/btn_insert_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+/************DialogAbout end************/
+
+
+/************CFilesSaveAsUI begin************/
+QPushButton#pushButtonFilePath,
+QPushButton#pushButtonSaveAndUpLoad,
+QPushButton#pushButtonSaveLocal,
+QPushButton#pushButtonCancel
+{
+    background:transparent;
+    border-image: url(:/res/images/btn_nav_press.png);
+    font:14px;
+    padding:4px;
+    color: #cfcfcf;
+}
+
+QPushButton#pushButtonFilePath:hover,
+QPushButton#pushButtonSaveAndUpLoad:hover,
+QPushButton#pushButtonSaveLocal:hover,
+QPushButton#pushButtonCancel:hover
+{
+    border-image: url(:/res/images/btn_nav_hl.png);
+}
+
+QPushButton#pushButtonFilePath:pressed,
+QPushButton#pushButtonSaveAndUpLoad:pressed,
+QPushButton#pushButtonSaveLocal:pressed,
+QPushButton#pushButtonCancel:pressed
+{
+    border-image: url(:/res/images/btn_nav_hl.png);
+}
+
+/************Rotot Controller Widget Start************/
+/*背景*/
+QPushButton#pbRobotLabelFrame
+{
+    border-image: url(:/res/images/bg_robot_control.png);
+}
+/************Rotot Controller Widget End************/
+
+QLabel#labelFileName, QLabel#labelFilePath, QLabel#labelNotice
+{
+    background:transparent;
+    font:14px;
+    padding:4px;
+    color: #d3d3d3;  
+}
+/************CFilesSaveAsUI end************/
+
+/***************全局控制按钮开始***************/
+/*头像*/
+QPushButton#pbRobotHead:enabled
+{
+    border-image: url(:/res/images/alpha_connect.png);
+}
+QPushButton#pbRobotHead:!enabled
+{
+    border-image: url(:/res/images/alpha_disconnect.png);
+}
+
+/*连接*/
+QPushButton#pbConnectRobot:enabled
+{
+    border-image: url(:/res/images/icon_connect_enable.png);
+}
+QPushButton#pbConnectRobot:!enabled
+{
+    border-image: url(:/res/images/icon_connect_disable.png);
+}
+QPushButton#pbConnectRobot:hover
+{
+    border-image: url(:/res/images/icon_connect_hl.png);
+}
+QPushButton#pbConnectRobot:pressed
+{
+    border-image: url(:/res/images/icon_connect_press.png);
+}
+
+/*断开连接*/
+QPushButton#pbDisconnectRobot:enabled
+{
+    border-image: url(:/res/images/icon_disconnect_enable.png);
+}
+QPushButton#pbDisconnectRobot:!enabled
+{
+    border-image: url(:/res/images/icon_disconnect_disable.png);
+}
+QPushButton#pbDisconnectRobot:hover
+{
+    border-image: url(:/res/images/icon_disconnect_hl.png);
+}
+QPushButton#pbDisconnectRobot:pressed
+{
+    border-image: url(:/res/images/icon_disconnect_press.png);
+}
+
+/*复位*/
+QPushButton#pbResetRobot:enabled
+{
+    border-image: url(:/res/images/icon_reset_body_enable.png);
+}
+QPushButton#pbResetRobot:!enabled
+{
+    border-image: url(:/res/images/icon_reset_body_disable.png);
+}
+QPushButton#pbResetRobot:hover
+{
+    border-image: url(:/res/images/icon_reset_body_hl.png);
+}
+QPushButton#pbResetRobot:pressed
+{
+    border-image: url(:/res/images/icon_reset_body_press.png);
+}
+
+/*掉电*/
+QPushButton#pbPowerOff:enabled
+{
+    border-image: url(:/res/images/icon_poweroff_enable.png);
+}
+QPushButton#pbPowerOff:!enabled
+{
+    border-image: url(:/res/images/icon_poweroff_disable.png);
+}
+QPushButton#pbPowerOff:hover
+{
+    border-image: url(:/res/images/icon_poweroff_hl.png);
+}
+QPushButton#pbPowerOff:pressed
+{
+    border-image: url(:/res/images/icon_poweroff_press.png);
+}
+
+/*WIFI*/
+QPushButton#pbRobotWifi:enabled
+{
+    border-image: url(:/res/images/icon_wifi_enable.png);
+}
+QPushButton#pbRobotWifi:!enabled
+{
+    border-image: url(:/res/images/icon_wifi_disable.png);
+}
+QPushButton#pbRobotWifi:hover
+{
+    border-image: url(:/res/images/icon_wifi_hl.png);
+}
+QPushButton#pbRobotWifi:pressed
+{
+    border-image: url(:/res/images/icon_wifi_press.png);
+}
+
+/**/
+QTableWidget#tableWidgetWifiInfos
+{
+    background: transparent;
+    border: 1px solid #0f0f0f;
+    background-color: #9f9f9f;
+    selection-background-color: #8a8a8a;
+}
+
+QTableWidget#tableWidgetWifiInfos::item
+{
+    background: transparent;
+    font:12px;
+    color: #000000;
+ }
+
+QTableWidget#tableWidgetWifiInfos::item:selected
+{
+    background: transparent;
+}
+
+/***************全局控制按钮结束****************/

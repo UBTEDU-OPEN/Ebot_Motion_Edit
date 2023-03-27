@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/qss/UBXLoginDefault.qss</file>
+        <file>res/images/bg_login.png</file>
+        <file>res/images/btn_close_login.png</file>
+        <file>res/images/icon_close_login.png</file>
+        <file>res/images/icon_head_login.png</file>
+        <file>res/images/btn_login_hl.png</file>
+        <file>res/images/btn_login_press.png</file>
+        <file>res/images/btn_login_select.png</file>
+        <file>res/images/input_login.png</file>
+        <file>res/images/tabwidget_hl.png</file>
+        <file>res/images/tabwidget_nor.png</file>
+        <file>res/images/tabwidget_select.png</file>
+        <file>res/images/cb_icon_nor_login.png</file>
+        <file>res/images/cb_icon_select_login.png</file>
+        <file>res/qss/UBXUserMessageDefault.qss</file>
+        <file>res/images/icon_win_close_nor.png</file>
+        <file>res/images/icon_win_close_press.png</file>
+        <file>res/images/icon_win_close_sel.png</file>
+        <file>res/images/icon_choice.png</file>
+    </qresource>
+</RCC>

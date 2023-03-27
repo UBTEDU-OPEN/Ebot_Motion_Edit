@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/qss/motiondefault.qss</file>
+        <file>res/images/btn_add_hl.png</file>
+        <file>res/images/btn_add_nor.png</file>
+        <file>res/images/btn_add_press.png</file>
+        <file>res/images/btn_insert_hl.png</file>
+        <file>res/images/btn_insert_nor.png</file>
+        <file>res/images/btn_insert_press.png</file>
+        <file>res/images/btn_split_hl.png</file>
+        <file>res/images/btn_split_nor.png</file>
+        <file>res/images/btn_split_press.png</file>
+        <file>res/images/icon_add.png</file>
+        <file>res/images/input.png</file>
+        <file>res/images/pic_music.png</file>
+        <file>res/images/icon_musicorigin.png</file>
+        <file>res/images/icon_insert.png</file>
+        <file>res/images/icon_modify.png</file>
+        <file>res/images/icon_split.png</file>
+        <file>res/images/icon_pause_hl.png</file>
+        <file>res/images/icon_pause_nor.png</file>
+        <file>res/images/icon_play_nor.png</file>
+        <file>res/images/icon_play_press.png</file>
+        <file>res/images/icon_play_hl.png</file>
+        <file>res/images/icon_pause_press.png</file>
+        <file>res/images/icon_stop_hl.png</file>
+        <file>res/images/icon_stop_nor.png</file>
+        <file>res/images/icon_stop_press.png</file>
+        <file>res/qss/menudefault.qss</file>
+        <file>res/images/bg_frame.png</file>
+    </qresource>
+</RCC>

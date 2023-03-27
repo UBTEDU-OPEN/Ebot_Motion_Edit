@@ -1,0 +1,23 @@
+﻿/****************** mp3proj模块 ****************/
+
+/************ popup menu begin ************/
+
+QMenu
+{
+    background-color:#6e6e6e;
+    color:#c4c4c4;
+}
+
+QMenu::item:selected
+{
+    background-color:#406189;
+}
+
+QMenu::item:!enabled
+{
+    color:grey;
+}
+
+/************ popup menu end ************/
+
+

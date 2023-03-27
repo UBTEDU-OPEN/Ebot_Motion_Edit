@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/qss/localactsyncwidgetdefault.qss</file>
+        <file>res/images/cb_icon_nor.png</file>
+        <file>res/images/cb_icon_select.png</file>
+        <file>res/images/btn_add_act_hl.png</file>
+        <file>res/images/btn_add_act_nor.png</file>
+        <file>res/images/btn_add_act_press.png</file>
+        <file>res/images/btn_synchronization_hl.png</file>
+        <file>res/images/btn_synchronization_nor.png</file>
+        <file>res/images/btn_synchronization_press.png</file>
+        <file>res/images/icon_add_act.png</file>
+        <file>res/images/icon_synchronization.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/qss/mp3projdefault.qss</file>
+        <file>res/images/btn_music_hl.png</file>
+        <file>res/images/btn_music_nor.png</file>
+        <file>res/images/btn_music_press.png</file>
+        <file>res/images/icon_addmusic.png</file>
+        <file>res/images/btn_simulate_hl.png</file>
+        <file>res/images/btn_simulate_nor.png</file>
+        <file>res/images/btn_simulate_press.png</file>
+        <file>res/images/icon_exercise.png</file>
+        <file>res/images/icon_music.png</file>
+        <file>res/images/icon_pointer.png</file>
+        <file>res/images/btn_magnifier.png</file>
+        <file>res/images/btn_reduce.png</file>
+        <file>res/qss/mp3projmenudefault.qss</file>
+        <file>res/images/icon_pause_simulate.png</file>
+        <file>res/images/icon_play_simulate.png</file>
+        <file>res/images/icon_stop_simulate.png</file>
+        <file>res/images/bg_top.png</file>
+        <file>res/images/btn_modify_hl.png</file>
+        <file>res/images/btn_modify_nor.png</file>
+        <file>res/images/btn_modify_press.png</file>
+        <file>res/images/icon_delete_music.png</file>
+    </qresource>
+</RCC>

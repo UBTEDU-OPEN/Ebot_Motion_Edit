@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Motors>
+ <!-- 右手--> 
+	<Motor>
+    <ID>1</ID>
+    <Name>righthand3</Name>
+    <Angle>0</Angle>
+    <Axis>1,0,0</Axis>
+    <Offset>-90</Offset>
+    <InitAngle>90</InitAngle>
+    <DefaultMaxAngle>255</DefaultMaxAngle>
+  </Motor>
+  
+  <Motor>
+    <ID>2</ID>
+    <Name>righthand2</Name>
+    <Angle>0</Angle>
+    <Axis>0,-1,0</Axis>
+    <Offset>0</Offset>
+    <InitAngle>90</InitAngle>
+    <DefaultMaxAngle>255</DefaultMaxAngle>
+  </Motor>
+  
+  <Motor>
+    <ID>3</ID>
+    <Name>righthand1</Name>
+    <Angle>0</Angle>
+    <Axis>0,-1,0</Axis>
+    <Offset>-90</Offset>
+    <InitAngle>90</InitAngle>
+    <DefaultMaxAngle>255</DefaultMaxAngle>
+  </Motor>
+ <!-- 左手--> 
+  <Motor>
+    <ID>4</ID>
+    <Name>lefthand3</Name>
+    <Angle>0</Angle>
+    <Axis>-1,0,0</Axis>
+    <Offset>-90</Offset>
+    <InitAngle>90</InitAngle>
+    <DefaultMaxAngle>255</DefaultMaxAngle>
+  </Motor>
+
+<Motor>
+    <ID>5</ID>
+    <Name>lefthand2</Name>
+    <Angle>0</Angle>
+    <Axis>0,-1,0</Axis>
+    <Offset>-180</Offset>
+    <InitAngle>90</InitAngle>
+    <DefaultMaxAngle>255</DefaultMaxAngle>
+  </Motor>
+
+<Motor>
+    <ID>6</ID>
+    <Name>lefthand1</Name>
+    <Angle>0</Angle>
+    <Axis>0,-1,0</Axis>
+    <Offset>-90</Offset>
+    <InitAngle>90</InitAngle>
+    <DefaultMaxAngle>255</DefaultMaxAngle>
+  </Motor>
+  
+ <!-- 右脚--> 
+  <Motor>
+    <ID>7</ID>
+    <Name>rightleg5</Name>
+    <Angle>0</Angle>
+    <Axis>0,1,0</Axis>
+    <Offset>-90</Offset>
+    <InitAngle>90</InitAngle>
+    <DefaultMaxAngle>255</DefaultMaxAngle>
+  </Motor>
+  
+  <Motor>
+    <ID>8</ID>
+    <Name>rightleg4</Name>
+    <Angle>0</Angle>
+    <Axis>1,0,0</Axis>
+    <Offset>-90</Offset>
+    <InitAngle>60</InitAngle>
+    <DefaultMaxAngle>255</DefaultMaxAngle>
+  </Motor>
+  
+  <Motor>
+    <ID>9</ID>
+    <Name>rightleg3</Name>
+    <Angle>0</Angle>
+    <Axis>-1,0,0</Axis>
+    <Offset>-120</Offset>
+    <InitAngle>76</InitAngle>
+    <DefaultMaxAngle>255</DefaultMaxAngle>
+  </Motor>
+ 
+ <Motor>
+    <ID>10</ID>
+    <Name>rightleg2</Name>
+    <Angle>0</Angle>
+    <Axis>-1,0,0</Axis>
+    <Offset>-95</Offset>
+    <InitAngle>110</InitAngle>
+    <DefaultMaxAngle>255</DefaultMaxAngle>
+  </Motor>  
+  
+  <Motor>
+    <ID>11</ID>
+    <Name>rightleg1</Name>
+    <Angle>0</Angle>
+    <Axis>0,1,0</Axis>
+    <Offset>-90</Offset>
+    <InitAngle>90</InitAngle>
+    <DefaultMaxAngle>255</DefaultMaxAngle>
+  </Motor>
+  
+ <!-- 左脚--> 
+  <Motor>
+    <ID>12</ID>
+    <Name>leftleg5</Name>
+    <Angle>0</Angle>
+    <Axis>0,1,0</Axis>
+    <Offset>-90</Offset>
+    <InitAngle>90</InitAngle>
+    <DefaultMaxAngle>255</DefaultMaxAngle>
+  </Motor>
+  
+  <Motor>
+    <ID>13</ID>
+    <Name>leftleg4</Name>
+    <Angle>0</Angle>
+    <Axis>-1,0,0</Axis>
+    <Offset>-90</Offset>
+    <InitAngle>120</InitAngle>
+    <DefaultMaxAngle>255</DefaultMaxAngle>
+  </Motor>
+  
+  <Motor>
+    <ID>14</ID>
+    <Name>leftleg3</Name>
+    <Angle>0</Angle>
+    <Axis>1,0,0</Axis>
+    <Offset>-60</Offset>
+    <InitAngle>104</InitAngle>
+    <DefaultMaxAngle>255</DefaultMaxAngle>
+  </Motor>
+  
+  
+   <Motor>
+    <ID>15</ID>
+    <Name>leftleg2</Name>
+    <Angle>0</Angle>
+    <Axis>1,0,0</Axis>
+    <Offset>95</Offset>
+    <InitAngle>70</InitAngle>
+    <DefaultMaxAngle>255</DefaultMaxAngle>
+  </Motor>
+  
+  <Motor>
+    <ID>16</ID>
+    <Name>liftleg1</Name>
+    <Angle>0</Angle>
+    <Axis>0,-1,0</Axis>
+    <Offset>-90</Offset>
+    <InitAngle>90</InitAngle>
+    <DefaultMaxAngle>255</DefaultMaxAngle>
+  </Motor>
+  
+</Motors>
+
+

@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/qss/TreeNavigationDefault.qss</file>
+        <file>res/images/icon_seach.png</file>
+        <file>res/images/btn_add_file_hl.png</file>
+        <file>res/images/btn_add_file_nor.png</file>
+        <file>res/images/btn_add_file_press.png</file>
+        <file>res/images/icon_add_file.png</file>
+        <file>res/images/btn_system_hl.png</file>
+        <file>res/images/btn_system_nor.png</file>
+        <file>res/images/btn_system_select.png</file>
+        <file>res/images/icon_branch_close.png</file>
+        <file>res/images/icon_branch_open.png</file>
+        <file>res/images/icon_dir.png</file>
+        <file>res/images/icon_item.png</file>
+        <file>res/images/bg.png</file>
+        <file>res/qss/TreeNavigationMenuDefault.qss</file>
+        <file>res/images/icon_add_file_disable.png</file>
+    </qresource>
+</RCC>

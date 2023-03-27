@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/qss/widget.qss</file>
+        <file>res/images/btn_close.png</file>
+        <file>res/images/icon_close.png</file>
+        <file>res/images/icon_win_close_nor.png</file>
+        <file>res/images/icon_win_close_press.png</file>
+        <file>res/images/icon_win_close_sel.png</file>
+        <file>res/images/ubxwidget_bg.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,202 @@
+/************ 修改个人信息UserMessageEdit模块 ************/
+
+QDialog#DialogUserMessageEdit
+{
+
+    background: transparent;
+    border-image: url(:/res/images/bg_login.png) 38px 16px 16px 16px repeat;
+    border-width: 38px 16px 16px 16px;
+}
+
+/*关闭 按钮*/
+QPushButton#pbCloseMessage
+{
+border-image: url(:/res/images/btn_close_login.png);
+}
+QPushButton#pbCloseMessage:hover
+{
+background-image: url(:/res/images/btn_close_login.png);
+border-image: url(:/res/images/icon_close_login.png);
+}
+
+/*关闭 按钮*/
+QPushButton#pbClose_Win
+{
+    border-image: url(:/res/images/icon_win_close_nor.png);
+}
+QPushButton#pbClose_Win:hover
+{
+    border-image: url(:/res/images/icon_win_close_sel.png);
+}
+QPushButton#pbClose_Win:pressed
+{
+    border-image: url(:/res/images/icon_win_close_press.png);
+}
+
+QLabel#labelNickName
+{
+    color: #d3d3d3;
+    font: 11pt;
+}
+
+QLabel#labelGender
+{
+    color: #d3d3d3;
+    font: 11pt;
+}
+
+QLabel#labelPhoneName
+{
+    color: #d3d3d3;
+    font: 11pt;
+}
+
+QLabel#labelMailName
+{
+    color: #d3d3d3;
+    font: 11pt;
+}
+
+QLabel#labelCountryCode
+{
+    color: #d3d3d3;
+    font: 11pt;
+}
+
+QLabel#labelPhoneNumInfo
+{
+    color: #fd4a5b;
+    font: 10pt;
+}
+
+QLabel#labelPasswordInfo
+{
+    color: #fd4a5b;
+    font: 10pt;
+}
+
+
+
+QLineEdit#lENickName
+{
+    background-color: #9f9f9f;
+    color: #454545;
+    font: 11pt;
+    border: 0px;
+}
+QLineEdit#lEPhoneName
+{
+    background-color: #9f9f9f;
+    color: #454545;
+    font: 11pt;
+    border: 0px;
+}
+
+QLineEdit#lEMailName
+{
+    background-color: #9f9f9f;
+    color: #454545;
+    font: 11pt;
+    border: 0px;
+}
+
+
+
+QPushButton#pBEditUserInfo
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:11pt;
+    color: #d3d3d3;
+}
+
+QPushButton#pBEditUserInfo:hover
+{
+    border-image: url(:/res/images/btn_login_hl.png);
+    font:11pt;
+    color: #d3d3d3;
+}
+
+QPushButton#pBEditUserInfo:checked
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:11pt;
+    color: #d3d3d3;
+}
+
+QPushButton#pBCancel
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:11pt;
+    color: #d3d3d3;
+}
+
+QPushButton#pBCancel:hover
+{
+    border-image: url(:/res/images/btn_login_hl.png);
+    font:11pt;
+    color: #d3d3d3;
+}
+
+QPushButton#pBCancel:checked
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:11pt;
+    color: #d3d3d3;
+}
+
+QPushButton#pBOk
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:11pt;
+    color: #d3d3d3;
+}
+
+QPushButton#pBOk:hover
+{
+    border-image: url(:/res/images/btn_login_hl.png);
+    font:11pt;
+    color: #d3d3d3;
+}
+
+QPushButton#pBOk:checked
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:11pt;
+    color: #d3d3d3;
+}
+
+QRadioButton#rBMale
+{
+    font:11pt;
+    color: #d3d3d3;
+}
+
+QRadioButton#rBFemale
+{
+    font:11pt;
+    color: #d3d3d3;
+}
+
+/************ QComboBox begin ************/
+QComboBox
+{
+    border-left-width:0px;
+    border-right-width: 1px;
+    border-right-color: #070707;
+    border-right-style: solid;
+    border-top-width: 1px;
+    border-top-color: #070707;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #070707;
+    border-bottom-style: solid;
+}
+
+QComboBox
+{
+    background:#9f9f9f;
+}
+
+/************ 修改个人信息UserMessageEdit模块 ************/
+
+

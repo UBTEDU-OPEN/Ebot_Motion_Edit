@@ -1,0 +1,12 @@
+#ifndef UBXWIDGET_GLOBAL_H
+#define UBXWIDGET_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(UBXWIDGET_LIBRARY)
+#  define UBXWIDGETSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define UBXWIDGETSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // UBXWIDGET_GLOBAL_H

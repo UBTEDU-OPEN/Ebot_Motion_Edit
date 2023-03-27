@@ -1,0 +1,676 @@
+﻿/********************************Motion Editor模块****************************/
+
+/************DialogCommandBox begin************/
+
+QDialog#DialogCommandBox
+{
+    background-color:rgb(232, 232, 232);
+}
+
+QLabel#labelInstruction
+{
+    color: #5e5e5e;
+    font: 16px;
+}
+
+QLineEdit#lineEditBlockName
+{
+    background-color: #666666;
+    color: #454545;
+    font: 16px;
+    border: 0px;
+}
+
+QLineEdit#lineEditBlockName:enabled
+{
+    border-image: url(:/res/images/input.png);
+    padding-left: 2px;
+    color: #000000;
+    font: 16px;
+    border: 0px;
+    selection-background-color: #406189;
+}
+
+QPushButton#btnCancel
+{
+    border-image: url(:/res/images/btn_insert_hl.png);
+    font:16px;
+    color: #d3d3d3;
+}
+
+QPushButton#btnCancel:hover
+{
+    border-image: url(:/res/images/btn_insert_nor.png);
+    font:16px;
+    color: #d3d3d3;
+}
+
+QPushButton#btnCancel:pressed
+{
+    border-image: url(:/res/images/btn_insert_press.png);
+    font:16px;
+    color: #d3d3d3;
+}
+
+QPushButton#btnOK
+{
+    border-image: url(:/res/images/btn_insert_hl.png);
+    font:16px;
+    color: #d3d3d3;
+}
+
+QPushButton#btnOK:hover
+{
+    border-image: url(:/res/images/btn_insert_nor.png);
+    font:16px;
+    color: #d3d3d3;
+}
+
+QPushButton#btnOK:pressed
+{
+    border-image: url(:/res/images/btn_insert_press.png);
+    font:16px;
+    color: #d3d3d3;
+}
+
+
+/************DialogCommandBox end************/
+
+/************DialogBlockDescription begin************/
+QDialog#DialogBlockDescription
+{
+    background-color:rgb(232, 232, 232);
+}
+
+QLabel#labelStartTime
+{
+    color: #5e5e5e;
+    font: 16px;
+}
+QLabel#labelEndTime
+{
+    color: #5e5e5e;
+    font: 16px;
+}
+QLabel#labelDescription
+{
+    color: #5e5e5e;
+    font: 18px;
+}
+
+QLineEdit#lineEditStartime
+{
+    background-color: #666666;
+    color: #454545;
+    font: 16px;
+    border: 0px;
+}
+
+QLineEdit#lineEditStartime:enabled
+{
+    border-image: url(:/res/images/input.png);
+    padding-left: 2px;
+    color: #000000;
+    font: 16px;
+    border: 0px;
+    selection-background-color: #406189;
+}
+
+QLineEdit#lineEditEndTime
+{
+    background-color: #666666;
+    color: #454545;
+    font: 16px;
+    border: 0px;
+}
+
+QLineEdit#lineEditEndTime:enabled
+{
+    border-image: url(:/res/images/input.png);
+    padding-left: 2px;
+    color: #000000;
+    font: 16px;
+    border: 0px;
+    selection-background-color: #406189;
+}
+
+QLineEdit#lineEditDescription
+{
+    background-color: #666666;
+    color: #454545;
+    font: 16px;
+    border: 0px;
+}
+
+QLineEdit#lineEditDescription:enabled
+{
+    border-image: url(:/res/images/input.png);
+    padding-left: 2px;
+    color: #000000;
+    font: 16px;
+    border: 0px;
+    selection-background-color: #406189;
+}
+/************DialogCommandBox end************/
+
+/************UBXMotionEditorLayout Widget begin************/
+QWidget#CUBXMotionEditorLayout
+{
+    background-color: ＃262626;
+}
+
+QWidget#CUIMainLayerLayout
+{
+    background-color: ＃262626;
+}
+
+QWidget#CUILayerManager
+{
+    background-color: ＃262626;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    background: #2e2e2e;
+    height: 20px;
+}
+
+QScrollBar::handle:horizontal
+{
+    background: rgb(100, 100, 100);
+    min-width: 20px;
+    height: 10px;
+    margin: 5px 1px 5px 1px;
+    border-radius: 3px;
+    border: none;
+}
+
+QScrollBar::add-line:horizontal
+{
+    border: none;
+    background: none;
+    width: 0px;
+    height: 0px;
+}
+
+QScrollBar::sub-line:horizontal
+{
+    border: none;
+    background: none;
+    width: 0px;
+    height: 0px;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none;
+}
+
+
+QScrollBar:vertical
+{
+    border: none;
+    background: #2e2e2e;
+    width: 20px;
+}
+
+QScrollBar::handle:vertical
+{
+    background: rgb(100, 100, 100);
+    min-height: 20px;
+    width: 10px;
+    margin: 1px 5px 1px 5px;
+    border-radius: 3px;
+    border: none;
+}
+
+QScrollBar::add-line:vertical
+{
+    border: none;
+    background: none;
+    width: 0px;
+    height: 0px;
+}
+
+QScrollBar::sub-line:vertical
+{
+    border: none;
+    background: none;
+    width: 0px;
+    height: 0px;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+/************UBXMotionEditorLayout Widget end************/
+
+/************ Action Blocks begin ************/
+
+QWidget#widgetBtnContainer
+{
+    background-color: #404040;
+    border-radius: 1px;
+}
+
+QLabel#labelActionBlocks
+{    
+    border-image:url(:/res/images/bg_frame.png) 2 repeat;
+    background-color: transparent;
+    color: #d3d3d3;
+    font: 16px;
+    border:0px;
+    border-top-width:2px;
+}
+
+/************ Action Blocks end ************/
+
+/************ Action Frames begin ************/
+QLabel#labelActionFrames
+{
+    padding-left: 12px;
+    border-image:url(:/res/images/bg_frame.png) 2 repeat;
+    background-color: transparent;
+    color: #d3d3d3;
+    font: 16px;
+    border:0px;
+    border-top-width:2px;
+}
+
+QWidget#widgetActionOpContainer
+{
+    background-color: #404040;
+    min-height: 40px;
+    max-height: 40px;
+}
+
+QLabel#labelTime
+{
+    color: #d3d3d3;
+    font:14px;
+}
+
+QLineEdit#leBeatValue
+{
+    background-color: #666666;
+    color: #454545;
+    font: 14px;
+    border: 0px;
+}
+
+QLineEdit#leBeatValue:enabled
+{
+    border-image: url(:/res/images/input.png);
+    color: #000000;
+    font: 14px;
+    border: 0px;
+    selection-background-color: #406189;
+}
+
+QLabel#labelMS
+{
+    color: #d3d3d3;
+    font:14px;
+}
+
+QPushButton#pbInsert
+{
+    border-image: url(:/res/images/btn_insert_nor.png);
+    font:14px;
+    color: #d3d3d3;
+    qproperty-icon: url(:/res/images/icon_insert.png);
+    qproperty-iconSize: 15px 14px;
+}
+
+QPushButton#pbInsert:hover
+{
+    border-image: url(:/res/images/btn_insert_hl.png);
+    font:14px;
+    color: #d3d3d3;
+    qproperty-icon: url(:/res/images/icon_insert.png);
+    qproperty-iconSize: 15px 14px;
+}
+
+QPushButton#pbInsert:pressed
+{
+    border-image: url(:/res/images/btn_insert_press.png);
+    font:14px;
+    color: #d3d3d3;
+    qproperty-icon: url(:/res/images/icon_insert.png);
+    qproperty-iconSize: 15px 14px;
+}
+QPushButton#pbInsert:disabled
+{
+    color: #808080;
+}
+
+QPushButton#pbInsertSplit
+{
+    border-image: url(:/res/images/btn_split_nor.png);
+    font:14px;
+    color: #d3d3d3;
+    qproperty-icon: url(:/res/images/icon_split.png);
+    qproperty-iconSize: 15px 14px;
+}
+
+QPushButton#pbInsertSplit:hover
+{
+    border-image: url(:/res/images/btn_split_hl.png);
+    font:14px;
+    color: #d3d3d3;
+    qproperty-icon: url(:/res/images/icon_split.png);
+    qproperty-iconSize: 15px 14px;
+}
+
+QPushButton#pbInsertSplit:pressed
+{
+    border-image: url(:/res/images/btn_split_press.png);
+    font:14px;
+    color: #d3d3d3;
+    qproperty-icon: url(:/res/images/icon_split.png);
+    qproperty-iconSize: 15px 14px;
+}
+QPushButton#pbInsertSplit:disabled
+{
+    color: #808080;
+}
+
+QPushButton#pbModify
+{
+    border-image: url(:/res/images/btn_insert_nor.png);
+    font:14px;
+    color: #d3d3d3;
+    qproperty-icon: url(:/res/images/icon_modify.png);
+    qproperty-iconSize: 15px 14px;
+}
+
+QPushButton#pbModify:hover
+{
+    border-image: url(:/res/images/btn_insert_hl.png);
+    font:14px;
+    color: #d3d3d3;
+    qproperty-icon: url(:/res/images/icon_modify.png);
+    qproperty-iconSize: 15px 14px;
+}
+
+QPushButton#pbModify:pressed
+{
+    border-image: url(:/res/images/btn_insert_press.png);
+    font:14px;
+    color: #d3d3d3;
+    qproperty-icon: url(:/res/images/icon_modify.png);
+    qproperty-iconSize: 15px 14px;
+}
+QPushButton#pbModify:disabled
+{
+    color: #808080;
+}
+
+QPushButton#pbAdd
+{
+    border-image: url(:/res/images/btn_add_nor.png);
+    border: 0px;
+    padding:2px;
+    font:14px;
+    color: #fee68a;
+    qproperty-icon: url(:/res/images/icon_add.png);
+    qproperty-iconSize: 15px 14px;
+}
+
+QPushButton#pbAdd:hover
+{
+    border-image: url(:/res/images/btn_add_hl.png);
+    border: 0px;
+    font:14px;
+    color: #fee68a;
+    qproperty-icon: url(:/res/images/icon_add.png);
+    qproperty-iconSize: 15px 14px;
+}
+
+QPushButton#pbAdd:pressed
+{
+    border-image: url(:/res/images/btn_add_press.png);
+    border: 0px;
+    font:14px;
+    color: #fee68a;
+    qproperty-icon: url(:/res/images/icon_add.png);
+    qproperty-iconSize: 15px 14px;
+}
+
+/************ Action Frames end ************/
+
+/************ Simulate Container begin ************/
+
+QWidget#widgetSimulateContainer
+{
+    background-color: #404040;
+    border-radius: 1px;
+}
+
+QLabel#labelMusiIcon
+{
+    border-image: url(:/res/images/pic_music.png);
+    background-color: transparent;
+    border: 0px;   
+    min-height: 25px;
+    max-height: 25px;
+    min-width: 25px;
+    max-width: 25px;  
+}
+
+QPushButton#btnUnitedSimulation
+{
+    background-image: url(:/res/images/icon_play_nor.png);
+    background-color: transparent;
+    border: 0px; 
+    min-height: 27px;
+    max-height: 27px;
+    min-width: 27px;
+    max-width: 27px;
+}
+
+QPushButton#btnUnitedSimulation:hover
+{
+    background-image: url(:/res/images/icon_play_hl.png);
+    background-color: transparent;
+    border: 0px;  
+}
+
+QPushButton#btnUnitedSimulation:pressed
+{
+    background-image: url(:/res/images/icon_play_press.png);
+    background-color: transparent;
+    border: 0px;    
+}
+
+QPushButton#btnPause
+{
+    background-image: url(:/res/images/icon_pause_nor.png);
+    background-color: transparent;
+    border: 0px;
+    min-height: 27px;
+    max-height: 27px;
+    min-width: 27px;
+    max-width: 27px;    
+}
+
+QPushButton#btnPause:hover
+{
+    background-image: url(:/res/images/icon_pause_hl.png);
+    background-color: transparent;
+    border: 0px;  
+}
+
+QPushButton#btnPause:pressed
+{
+    background-image: url(:/res/images/icon_pause_press.png);
+    background-color: transparent;
+    border: 0px;  
+}
+
+QPushButton#btnStop
+{
+    background-image: url(:/res/images/icon_stop_nor.png);
+    background-color: transparent;
+    border: 0px;
+    min-height: 27px;
+    max-height: 27px;
+    min-width: 27px;
+    max-width: 27px;    
+}
+
+QPushButton#btnStop:hover
+{
+    background-image: url(:/res/images/icon_stop_hl.png);
+    background-color: transparent;
+    border: 0px;
+}
+
+QPushButton#btnStop:pressed
+{
+    background-image: url(:/res/images/icon_stop_press.png);
+    background-color: transparent;
+    border: 0px;
+}
+
+QLabel#labelMusicName
+{
+    background-color: transparent;
+    color: #d4d4d4;
+    font:16px;
+}
+
+QLabel#labelMusicTime
+{
+    background-color: transparent;
+    color: #d4d4d4;
+    font:16px;
+}
+
+QSlider#musicSlider::groove:horizontal {
+    height: 1px;
+    background-color: #10b5e5;
+    left: 7px;
+    right: 7px;
+}
+
+QSlider#musicSlider::handle:horizontal {
+    border-image: url(:/res/images/icon_musicorigin.png);
+    width: 14px;
+    margin: -7px -7px -7px -7px;
+}
+
+/************ Simulate Container end ************/
+
+/************ m_ListActionGroup begin ************/
+
+QListWidget#m_ListActionGroup
+{
+    background: transparent;
+    background-color: #404040;
+    border:none;
+}
+
+QListWidget#m_ListActionGroup::item
+{
+    height: 30px;
+    color: #d3d3d3;
+    font:10px;
+    padding-left: 12px;
+    background: #404040;
+}
+
+QListWidget#m_ListActionGroup::item:selected
+{
+    background: #375171;
+}
+
+/************ m_ListActionGroup end ************/
+
+/************ twActionList begin ************/
+QHeaderView
+{
+    background: #363636;
+}
+
+QHeaderView::section, QTableCornerButton::section
+{
+    border: 1px solid #2a2a2a;
+    background-color: #444444;
+    margin: 6px;
+    font:12px;
+    color: #d3d3d3;
+}
+
+QHeaderView::section:vertical:checked
+ {
+     background-color: #375171;
+ }
+
+QTableWidget#twActionList
+{
+    background: transparent;
+    border:none;
+    background-color: #363636;
+    selection-background-color: #363636;
+}
+
+QTableWidget#twActionList::item
+{
+    background-color: #444444;
+    font:12px;
+    margin: 6px;
+    border: 1px solid #2a2a2a;
+ }
+
+QTableWidget#twActionList::item:selected
+{
+    background-color: #375171;
+}
+
+QLineEdit
+{
+    background-color: #444444;
+    font:16px;
+    color: #d3d3d3;
+    selection-background-color: #406189;
+}
+/************ twActionList end ************/
+
+QTabWidget#tabWidgetManager
+{
+   background-color: tansparent;
+   border: 0px;
+   margin: 0px;
+}
+
+QTabWidget#tabWidgetManager::tab-bar
+{
+   left:0px;
+   bottom:0px;
+   height:24px;
+   margin:0px;  
+}
+
+QTabWidget#tabWidgetManager::pane
+{
+   border-top:1px solid #404040;
+}
+
+QTabBar::tab
+{
+   background:#404040;
+   height:24px;
+   color:#d3d3d3;
+   padding-left:16px;
+   padding-right:0px;
+   padding-bottom:2px;
+   padding-top:2px;
+}
+
+QWidget#widgetForBackground
+{ 
+  margin: 0px;
+  padding: 0px;
+  background: #404040;  
+}

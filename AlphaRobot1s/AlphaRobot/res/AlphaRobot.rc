@@ -1,0 +1,39 @@
+#if defined(UNDER_CE)
+#include <winbase.h>
+#else
+#include <winver.h>
+#endif
+VS_VERSION_INFO VERSIONINFO
+    FILEVERSION 2,4,0,1128
+    PRODUCTVERSION 2,4,0,1128
+    FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+    FILEFLAGS VS_FF_DEBUG
+#else
+    FILEFLAGS 0x0L
+#endif
+    FILEOS VOS__WINDOWS32
+    FILETYPE VFT_DLL
+    FILESUBTYPE 0x0L
+    BEGIN
+        BLOCK "StringFileInfo"
+        BEGIN
+            BLOCK "080404b0"
+            BEGIN
+                VALUE "CompanyName", "UBTECH Robotics Corp."
+                VALUE "FileDescription", "Alpha1s Robot Editor"
+                VALUE "FileVersion", "2.4.0.1128"
+                VALUE "InternalName", "AlphaRobot.exe"
+                VALUE "LegalCopyright", "Copyright (C) UBTECH Robotics 2016"
+                VALUE "OriginalFilename", "AlphaRobot.exe"
+                VALUE "ProductName", "AlphaRobot"
+                VALUE "ProductVersion", "2.4.0.1128"
+            END
+        END
+        BLOCK "VarFileInfo"
+        BEGIN
+            VALUE "Translation", 0x804, 1200
+        END
+    END
+    
+IDI_ICON1               ICON    DISCARDABLE     "AlphaRobot.ico"

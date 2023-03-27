@@ -1,0 +1,15 @@
+***需安装innosetup5.5.5汉化增强版(风铃夜思雨)的Unicode版本，并将其程序目录添加到系统path环境变量中***
+
+1、修改InstallScript_New.iss中的版本号， 共1个，#define AppVersion         "2.1.2.2"
+2、修改E:\gitWorkspace\Alpha1s_QT\AlphaRobot1s\AlphaRobot\res\AlphaRobot.rc版本号， 共4个：
+    FILEVERSION 2,1,2,2
+    PRODUCTVERSION 2,1,1,2
+	VALUE "FileVersion", "2.1.2.2"
+	VALUE "ProductVersion", "2.1.2.2"
+3、编译新的release版本后，运行make.bat即可
+
+compile.bat  编译脚本
+copy_file.bat 复制文件
+installscript_new.iss 安装脚本
+make.bat 制作安装包的脚本
+publish.bat 发布到服务器的脚本

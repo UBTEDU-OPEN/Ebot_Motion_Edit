@@ -1,0 +1,1217 @@
+﻿/***************************** UBXActionLib 模块 ***************************/
+
+/**************** 动作库首页 begin ****************/
+/*动作库首页窗体 背景*/
+QWidget#ActionLibWidget
+{
+    border-image: url(:/res/images/bg_action_lib.png) 2px 1px 1px 1px repeat;
+    border-width: 2px 1px 1px 1px;
+    background-color: transparent;
+}
+
+QWidget#widgetTitle
+{
+    background-color: #404040;
+    border:0px;
+    border-bottom:1px solid #1d1d1d;
+}
+
+/*预览窗体 标题*/
+QLabel#labelTitle
+{
+    background:transparent;
+    font:18px;
+    color: #d3d3d3;
+    border-width:0px;
+    padding:0px;
+    margin:0px;
+}
+
+/*按钮组 按钮*/
+QPushButton#pbHomePageSports, QPushButton#pbHomePageDances, QPushButton#pbHomePageStory, 
+QPushButton#pbHomePageMusics, QPushButton#pbHomePageEducation
+{
+    background:transparent;
+    font:16px;
+    color: #d3d3d3;
+    border:3px solid transparent;
+    padding:0px 3px 0px 3px;
+}
+QPushButton#pbHomePageSports:hover, QPushButton#pbHomePageDances:hover, QPushButton#pbHomePageStory:hover, 
+QPushButton#pbHomePageMusics:hover, QPushButton#pbHomePageEducation:hover
+{
+    border-image: url(:/res/images/btn_all_actions_hl.png) 3;
+    font:16px;
+    color: #d3d3d3;
+    border:3px;
+    padding:0px 3px 0px 3px;
+}
+QPushButton#pbHomePageSports:checked, QPushButton#pbHomePageDances:checked, QPushButton#pbHomePageStory:checked,
+ QPushButton#pbHomePageMusics:checked, QPushButton#pbHomePageEducation:checked
+{
+    border-image: url(:/res/images/btn_all_actions_press.png) 3;
+    font:16px;
+    color: #d3d3d3;
+    border:3px;
+    padding:0px 3px 0px 3px;
+}
+
+/*换一换 按钮*/
+QPushButton#pbNext, QPushButton#pbMore
+{
+    background:transparent;
+    font:16px;
+    color: #7a7a7a;
+}
+QPushButton#pbNext:hover, QPushButton#pbMore:hover
+{
+    border:none;
+    background:transparent;
+    font:16px;
+    color: #d3d3d3;
+}
+QPushButton#pbNext:pressed, QPushButton#pbMore:pressed
+{
+    border:none;
+    background:transparent;
+    font:16px;
+    color: #7a7a7a;
+}
+
+/**************** 动作库首页 end ****************/
+
+/**************** 动作列表界面 begin ****************/
+
+/*********** 第一排按钮组 begin ***********/
+/*动作列表页面 背景*/
+QWidget#ActionListsPage
+{
+    border-image: url(:/res/images/bg_action_lib.png) 2px 1px 1px 1px repeat;
+    border-width: 2px 1px 1px 1px;
+    background-color: transparent;
+}
+
+QScrollArea#scrollAreaItemPreview
+{
+    border: 0px;
+    background-color: transparent;
+}
+
+QWidget#scrollAreaWidgetContents
+{
+    border: 0px;
+    background-color: transparent;
+}
+
+/*第一排按钮组 背景*/
+QWidget#widgetFirstLevelBG
+{
+    background-color: #404040;
+    border:0px;
+    border-bottom:1px solid #1d1d1d;
+}
+
+/*所有动作 按钮*/
+QPushButton#pbAllActions
+{
+    background:transparent;
+    font:18px;
+    color: #a6a6a6;
+    border:0px;
+    border-bottom:2px solid transparent;
+}
+QPushButton#pbAllActions:hover
+{
+    font:18px;
+    color: #d3d3d3;
+    border:0px;
+    border-bottom:2px solid transparent;
+}
+QPushButton#pbAllActions:checked
+{
+    font:18px;
+    color: #d3d3d3;
+    border:0px;
+    border-bottom: 2px solid #c0c0c0;
+}
+
+/*官方动作 按钮*/
+QPushButton#pbOfficialActions
+{
+    background:transparent;
+    font:18px;
+    color: #a6a6a6;
+    border:0px;
+    border-bottom:2px solid transparent;
+}
+QPushButton#pbOfficialActions:hover
+{
+    font:18px;
+    color: #d3d3d3;
+    border:0px;
+    border-bottom:2px solid transparent;
+}
+QPushButton#pbOfficialActions:checked
+{
+    font:18px;
+    color: #d3d3d3;
+    border:0px;
+    border-bottom: 2px solid #c0c0c0;
+}
+
+/*********** 第一排按钮组 end ***********/
+
+
+/*********** 第二排按钮组 begin ***********/
+/*所有 按钮*/
+QPushButton#pbActionPageAll, QPushButton#pbActionPageDances, QPushButton#pbActionPageStories, 
+QPushButton#pbActionPageSports, QPushButton#pbActionPageMusics, QPushButton#pbActionPageEducation
+{
+    background:transparent;
+    font:16px;
+    color: #a6a6a6;
+    border:3px solid transparent;
+    padding:0px 5px 0px 5px;
+}
+QPushButton#pbActionPageAll:hover, QPushButton#pbActionPageDances:hover, QPushButton#pbActionPageStories:hover, 
+QPushButton#pbActionPageSports:hover, QPushButton#pbActionPageMusics:hover, QPushButton#pbActionPageEducation:hover
+{
+    border-image: url(:/res/images/btn_all_actions_hl.png) 3 stretch;
+    font:16px;
+    color: #d3d3d3;
+    border:3px;
+    padding:0px 5px 0px 5px;
+}
+QPushButton#pbActionPageAll:checked, QPushButton#pbActionPageDances:checked, QPushButton#pbActionPageStories:checked, 
+QPushButton#pbActionPageSports:checked, QPushButton#pbActionPageMusics:checked, QPushButton#pbActionPageEducation:checked
+{
+    border-image: url(:/res/images/btn_all_actions_press.png) 3 stretch;
+    font:16px;
+    color: #d3d3d3;
+    border:3px;
+    padding:0px 5px 0px 5px;
+}
+
+/*********** 第二排按钮组 end ***********/
+
+/*********** 第三排按钮组 begin ***********/
+/*第三排按钮组 背景*/
+QWidget#widgetThreeLevelBG
+{
+    background-color: #404040;
+    border:0px;
+    border-bottom:1px solid #1d1d1d;
+}
+
+QLabel#labelDownloadList
+{
+   background:transparent;
+   color: #5e5e5e;
+   font:14px;
+}
+
+/*选择项提示 标签*/
+QLabel#labelSelWhat
+{
+    background:transparent;
+    font:16px;
+    color: #a6a6a6;
+}
+
+/*最新 按钮*/
+QPushButton#pbLatest
+{
+    border-image: url(:/res/images/btn_latest_actions_nor.png) 3 stretch;
+    font:16px;
+    color: #a6a6a6;
+    border:3px;
+}
+QPushButton#pbLatest:checked
+{
+    border-image: url(:/res/images/btn_latest_actions_press.png) 3 stretch;
+    font:16px;
+    color: #a6a6a6;
+    border:3px;
+}
+
+/*分割线*/
+QLabel#labelLine1
+{
+    background-color:#1d1d1d;
+}
+
+/*最热 按钮*/
+QPushButton#pbHottest
+{
+    border-image: url(:/res/images/btn_hottest_nor.png) 2;
+    font:16px;
+    color: #a6a6a6;
+    border:2px;
+}
+QPushButton#pbHottest:checked
+{
+    border-image: url(:/res/images/btn_hottest_press.png) 2;
+    font:16px;
+    color: #a6a6a6;
+    border:2px;
+}
+
+/*分割线*/
+QLabel#labelLine2
+{
+    background-color:#1d1d1d;
+}
+
+/*下载量 按钮*/
+QPushButton#pbDownloads
+{
+    border-image: url(:/res/images/btn_hottest_nor.png) 2;
+    font:16px;
+    color: #a6a6a6;
+    border:2px;
+}
+QPushButton#pbDownloads:checked
+{
+    border-image: url(:/res/images/btn_hottest_press.png) 2;
+    font:16px;
+    color: #a6a6a6;
+    border:2px;
+}
+
+/*分割线*/
+QLabel#labelLine3
+{
+    background-color:#1d1d1d;
+}
+
+/*评论量 按钮*/
+QPushButton#pbComments
+{
+    border-image: url(:/res/images/btn_comments_nor.png) 3;
+    font:16px;
+    color: #a6a6a6;
+    border:3px;
+}
+QPushButton#pbComments:checked
+{
+    border-image: url(:/res/images/btn_comments_press.png) 3;
+    font:16px;
+    color: #a6a6a6;
+    border:3px;
+}
+
+/*上一页 按钮*/
+QPushButton#pbPrevPage
+{
+    background:transparent;
+    border:none;
+    font:18px;
+    color: #a6a6a6;
+}
+QPushButton#pbPrevPage:hover
+{
+    background:transparent;
+    border:none;
+    font:18px;
+    color: #d3d3d3;
+}
+QPushButton#pbPrevPage:pressed
+{
+    background:transparent;
+    border:none;
+    font:18px;
+    color: #a6a6a6;
+}
+
+/*下一页 按钮*/
+QPushButton#pbNextPage
+{
+    background:transparent;
+    border:none;
+    font:18px;
+    color: #a6a6a6;
+}
+QPushButton#pbNextPage:hover
+{
+    background:transparent;
+    border:none;
+    font:18px;
+    color: #d3d3d3;
+}
+QPushButton#pbNextPage:pressed
+{
+    background:transparent;
+    border:none;
+    font:18px;
+    color: #a6a6a6;
+}
+
+QLabel#labelPages
+{
+    background:transparent;
+    font:16px;
+    color: #a6a6a6;
+}
+/*********** 第三排按钮组 end ***********/
+
+/*********** 下载项列表 begin ***********/
+QTableWidget#tableWidgetPreview, QTableWidget#tableWidgetActionList
+{
+    background: transparent;
+}
+
+QCheckBox#checkBoxSelectAll
+{
+    font: 16px;
+    color: #d3d3d3;
+    margin: 10px 0px 0px 10px;
+}
+
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:/res/images/cb_icon_nor.png);
+}
+
+QCheckBox::indicator:unchecked:pressed {
+    image: url(:/res/images/cb_icon_select.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(:/res/images/cb_icon_select.png);
+}
+
+QCheckBox:disabled
+{
+    color: #808080;
+}
+/*********** 下载项列表 end ***********/
+
+/*********** 全选、批量下载 begin ***********/
+/*批量下载 按钮*/
+ QPushButton#pbBatchDownload
+ {
+     border-image: url(:/res/images/btn_batchdownload_nor.png) 3;
+     font:16px;
+     padding:5px;
+     color: #a6a6a6;
+     border:3px;
+     qproperty-icon: url(:/res/images/btn_download.png);
+     qproperty-iconSize: 18px 18px;
+ }
+ QPushButton#pbBatchDownload:hover
+ {
+     border-image: url(:/res/images/btn_batchdownload_hl.png) 3;
+     font:16px;
+     padding:5px;
+     color: #a6a6a6;
+     border:3px;
+     qproperty-icon: url(:/res/images/btn_download.png);
+     qproperty-iconSize: 18px 18px;
+ }
+ QPushButton#pbBatchDownload:pressed
+ {
+     border-image: url(:/res/images/btn_batchdownload_press.png) 3;
+     font:16px;
+     padding:5px;
+     color: #a6a6a6;
+     border:3px;
+     qproperty-icon: url(:/res/images/btn_download.png);
+     qproperty-iconSize: 18px 18px;
+ }
+QPushButton#pbBatchDownload:disabled
+{
+    color: #808080;
+}
+
+/*上一页2 按钮*/
+QPushButton#pbPrevPage2
+{
+    background:transparent;
+    border:none;
+    font:20px;
+    color: #a6a6a6;
+}
+QPushButton#pbPrevPage2:hover
+{
+    background:transparent;
+    border:none;
+    font:20px;
+    color: #d3d3d3;
+}
+QPushButton#pbPrevPage2:pressed
+{
+    background:transparent;
+    border:none;
+    font:20px;
+    color: #a6a6a6;
+}
+
+/*下一页2 按钮*/
+QPushButton#pbNextPage2
+{
+    background:transparent;
+    border:none;
+    font:20px;
+    color: #a6a6a6;
+}
+QPushButton#pbNextPage2:hover
+{
+    background:transparent;
+    border:none;
+    font:20px;
+    color: #d3d3d3;
+}
+QPushButton#pbNextPage2:pressed
+{
+    background:transparent;
+    border:none;
+    font:20px;
+    color: #a6a6a6;
+}
+
+/*页码 按钮*/
+QPushButton#pbNumDot1, QPushButton#pbNumDot2
+{
+    background:transparent;
+    font:16px;
+    color: #a6a6a6;
+}
+
+QPushButton#pbNum1, QPushButton#pbNum2, QPushButton#pbNum3, QPushButton#pbNum4, QPushButton#pbNum5,
+QPushButton#pbNum6, QPushButton#pbNum7, QPushButton#pbNum8, QPushButton#pbNum9, QPushButton#pbNum10
+{
+    background:transparent;
+    font:16px;
+    color: #a6a6a6;
+    border:3px solid transparent;
+}
+QPushButton#pbNum1:hover, QPushButton#pbNum2:hover, QPushButton#pbNum3:hover, QPushButton#pbNum4:hover, QPushButton#pbNum5:hover,
+QPushButton#pbNum6:hover, QPushButton#pbNum7:hover, QPushButton#pbNum8:hover, QPushButton#pbNum9:hover, QPushButton#pbNum10:hover
+{
+    border-image: url(:/res/images/btn_number_hl.png) 3 stretch;
+    font:16px;
+    color: #d3d3d3;
+    border:3px;
+}
+QPushButton#pbNum1:checked, QPushButton#pbNum2:checked, QPushButton#pbNum3:checked, QPushButton#pbNum4:checked, QPushButton#pbNum5:checked,
+QPushButton#pbNum6:checked, QPushButton#pbNum7:checked, QPushButton#pbNum8:checked, QPushButton#pbNum9:checked, QPushButton#pbNum10:checked
+{
+    border-image: url(:/res/images/btn_number_press.png) 3 stretch;
+    font:16px;
+    color: #d3d3d3;
+    border:3px;
+}
+ /*********** 全选、批量下载 end  ***********/
+ /**************** 动作列表界面 end ****************/
+
+/**************** 下载界面 begin ****************/
+
+/*下载界面 背景*/
+QWidget#DownloadWidget
+{
+    background: transparent;
+    border-image: url(:/res/images/downloadwidget_bg.png) 38px 16px 16px 16px repeat;
+    border-width: 38px 16px 16px 16px;
+}
+
+/*关闭 按钮*/
+QPushButton#pbClose
+{
+    border-image: url(:/res/images/btn_close.png);
+}
+QPushButton#pbClose:hover
+{
+    background-image: url(:/res/images/btn_close.png);
+    border-image: url(:/res/images/icon_close.png);
+}
+
+/*关闭 按钮*/
+QPushButton#pbCloseWin
+{
+    border-image: url(:/res/images/icon_win_close_nor.png);
+}
+QPushButton#pbCloseWin:hover
+{
+    border-image: url(:/res/images/icon_win_close_sel.png);
+}
+QPushButton#pbCloseWin:pressed
+{
+    border-image: url(:/res/images/icon_win_close_press.png);
+}
+
+
+/*下载 列表*/
+QTableWidget#tableWidgetDownload
+{
+    background: transparent;
+    border: 1px solid #0d0d0d;
+    background-color: transparent;
+    border-bottom-width: 0px;
+}
+/*
+QTableWidget#tableWidgetDownload::item
+{
+    font:12px;
+    color: #d3d3d3;
+ }
+*/
+QHeaderView
+{
+    background: transparent;
+    border: none;
+    border-bottom-width: 1px;
+    border-bottom-color: #0d0d0d;
+    border-bottom-style: solid;
+    font:12px;
+    color: #d3d3d3;
+}
+
+QHeaderView::section
+{
+    border:none;
+    border-left-width: 1px;
+    border-left-color: #0d0d0d;
+    border-left-style: solid;
+    background-color: #505050;
+    padding-left: 8px;
+    font:12px;
+    color: #d3d3d3;
+}
+
+QCheckBox
+{
+    font: 14px;
+    color: #d3d3d3;
+    margin: 6px 0px 0px 6px;
+}
+
+QCheckBox#checkBox_selall
+{
+    font: 16px;
+    color: #d3d3d3;
+    margin: 6px 0px 0px 6px;
+}
+
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:/res/images/cb_icon_nor.png);
+}
+
+QCheckBox::indicator:unchecked:pressed {
+    image: url(:/res/images/cb_icon_select.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(:/res/images/cb_icon_select.png);
+}
+
+QCheckBox:disabled
+{
+    color: #808080;
+}
+/*进度条*/
+QProgressBar
+{
+    border: none;
+    background-color: #484848;
+    text-align: center;
+    font: 16px;
+    color: #d3d3d3;
+    min-height: 10px;
+    max-height: 10px;
+    margin: 16px 8px 16px 8px;
+}
+QProgressBar::chunk
+{
+    background-color: #17a9f4;
+}
+
+/*滚动条*/
+QScrollBar:horizontal
+{
+    border: 1px solid #0d0d0d;
+    background: #404040;
+    height: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+QScrollBar::handle:horizontal
+{
+    background: rgb(100, 100, 100);
+    min-width: 20px;
+    height: 10px;
+    margin: 5px 1px 5px 1px;
+    border-radius: 3px;
+    border: none;
+}
+
+QScrollBar::add-line:horizontal
+{
+    border: 1px solid #0d0d0d;
+    width: 20px;
+    height: 20px;
+    subcontrol-position: right;
+}
+
+QScrollBar::sub-line:horizontal
+{
+    border: 1px solid #0d0d0d;
+    width: 20px;
+    height: 20px;
+    subcontrol-position: left;
+}
+QScrollBar::left-arrow:horizontal
+{
+    border:none;
+    background-image: url(:/res/images/icon_left.png) ;
+    width: 5px;
+    height: 7px;
+}
+QScrollBar::right-arrow:horizontal
+{
+    border:none;
+    background-image: url(:/res/images/icon_right.png) ;
+    width: 5px;
+    height: 7px;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none;
+}
+
+
+QScrollBar:vertical
+{
+    border: 1px solid #0d0d0d;
+    background: #404040;
+    width: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+QScrollBar::handle:vertical
+{
+    background: rgb(100, 100, 100);
+    min-height: 20px;
+    width: 10px;
+    margin: 1px 5px 1px 5px;
+    border-radius: 3px;
+    border: none;
+}
+
+QScrollBar::add-line:vertical
+{
+    border: 1px solid #0d0d0d;
+    width: 20px;
+    height: 20px;
+}
+
+QScrollBar::sub-line:vertical
+{
+    border: 1px solid #0d0d0d;
+    width: 20px;
+    height: 20px;
+}
+QScrollBar::up-arrow:vertical
+{
+    border:none;
+    background-image: url(:/res/images/icon_upward.png) ;
+    width: 7px;
+    height: 5px;
+}
+QScrollBar::down-arrow:vertical
+{
+    border:none;
+    background-image: url(:/res/images/icon_down.png) ;
+    width: 7px;
+    height: 5px;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+/*按钮组 背景*/
+QWidget#widgetDownloadBtnContainer
+{
+    border-image: url(:/res/images/bg_2.png) 1px 5px 5px 5px repeat;
+    border-width: 1px 5px 5px 5px;
+    background-color: transparent;
+}
+/*暂停 按钮*/
+QPushButton#pbPause, QPushButton#pbAllStart, QPushButton#pbDelete,
+QPushButton#pbOpenFolder, QPushButton#pbAddToSyncList
+{
+    background:transparent;
+    font:14px;
+    color: #d3d3d3;
+    border:3px solid transparent;
+    padding:5px;
+}
+QPushButton#pbPause:hover, QPushButton#pbAllStart:hover, QPushButton#pbDelete:hover,
+QPushButton#pbOpenFolder:hover, QPushButton#pbAddToSyncList:hover
+{
+    border-image: url(:/res/images/btn_all_actions_hl.png) 3 stretch;
+    font:14px;
+    color: #d3d3d3;
+    border:3px;
+    padding:5px;
+}
+QPushButton#pbPause:pressed, QPushButton#pbAllStart:pressed, QPushButton#pbDelete:pressed,
+QPushButton#pbOpenFolder:pressed, QPushButton#pbAddToSyncList:pressed
+{
+    border-image: url(:/res/images/btn_all_actions_press.png) 3 stretch;
+    font:14px;
+    color: #d3d3d3;
+    border:3px;
+    padding:5px;
+}
+
+QPushButton#pbAddToSyncList:disabled
+{
+    color: #808080;
+}
+
+QCheckBox#checkBoxDisplaySync
+{
+    font: 16px;
+    color: #d3d3d3;
+    margin: 0px;
+}
+
+/*同步动作到机器人 按钮*/
+/*
+QPushButton#pbSyncingAction
+{
+    border-image: url(:/res/images/btn_synchronization_nor.png) 5;
+    border: 0px;
+    font: 18px;
+    color: #fee68a;
+    border:5px;
+    padding:5px;
+}
+QPushButton#pbSyncingAction:hover
+{
+    border-image: url(:/res/images/btn_synchronization_hl.png) 5;
+    border: 0px;
+    font: 18px;
+    color: #fee68a;
+    border:5px;
+    padding:5px;
+}
+QPushButton#pbSyncingAction:pressed
+{
+    border-image: url(:/res/images/btn_synchronization_press.png) 5;
+    border: 0px;
+    font: 18px;
+    color: #fee68a;
+    border:5px;
+    padding:5px;
+}
+QPushButton#pbSyncingAction:disabled
+{
+    color: #ae9d61;
+}
+*/
+/**************** 下载界面 end ****************/
+
+
+
+/**************** 我的收藏页面 begin ****************/
+/*我的收藏页面 背景*/
+QWidget#FavoritesPage
+{
+    border-image: url(:/res/images/bg_action_lib.png) 2px 1px 1px 1px repeat;
+    border-width: 2px 1px 1px 1px;
+    background-color: transparent;
+}
+
+/*所有动作 按钮*/
+QPushButton#pbFavAllActions, QPushButton#pbFavSports,
+QPushButton#pbFavDances, QPushButton#pbFavStories,
+QPushButton#pbFavChildSong, QPushButton#pbFavEducation
+{
+    background:transparent;
+    font:16px;
+    color: #a6a6a6;
+    border:0px;
+    border-bottom:2px solid transparent;
+}
+QPushButton#pbFavAllActions:hover, QPushButton#pbFavSports:hover,
+QPushButton#pbFavDances:hover, QPushButton#pbFavStories:hover,
+QPushButton#pbFavChildSong:hover, QPushButton#pbFavEducation:hover
+
+{
+    font:16px;
+    color: #d3d3d3;
+    border:0px;
+    border-bottom:2px solid transparent;
+}
+QPushButton#pbFavAllActions:checked, QPushButton#pbFavSports:checked,
+QPushButton#pbFavDances:checked, QPushButton#pbFavStories:checked,
+QPushButton#pbFavChildSong:checked, QPushButton#pbFavEducation:checked
+
+{
+    font:16px;
+    color: #d3d3d3;
+    border:0px;
+    border-bottom: 2px solid #c0c0c0;
+}
+/**************** 我的收藏页面 end ****************/
+
+
+/**************** my upload page begin ****************/
+/*my upload page 背景*/
+QWidget#MyUploadPage
+{
+    border-image: url(:/res/images/bg_action_lib.png) 2px 1px 1px 1px repeat;
+    border-width: 2px 1px 1px 1px;
+    background-color: transparent;
+}
+
+/*下载列表按钮*/
+QPushButton#pbMyUploadDelete
+{
+    background:transparent;
+    qproperty-icon: url(:/res/images/icon_delete.png);
+    qproperty-iconSize: 18px 18px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+QPushButton#pbMyUploadDelete:hover
+{
+    border-image: url(:/res/images/btn_nav_hl.png);
+    qproperty-icon: url(:/res/images/icon_delete.png);
+    qproperty-iconSize: 14px 14px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+QPushButton#pbMyUploadDelete:checked
+{
+    border-image: url(:/res/images/btn_nav_press.png);
+    qproperty-icon: url(:/res/images/icon_delete.png);
+    qproperty-iconSize: 18px 18px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+QPushButton#pbMyUploadDelete:pressed
+{
+    border-image: url(:/res/images/btn_nav_press.png);
+    qproperty-icon: url(:/res/images/icon_delete.png);
+    qproperty-iconSize: 18px 18px;
+    font:16px;
+    color: #cfcfcf;
+}
+
+/**************** MyUploadPage end ****************/
+
+
+/**************** 动作详情 begin ****************/
+/*主窗体 背景*/
+QWidget#ActionDetailWidget
+{
+    border-image: url(:/res/images/bg_action_lib.png) 2px 1px 1px 1px repeat;
+    border-width: 2px 1px 1px 1px;
+    background: transparent;
+}
+
+QWidget#scrollAreaWidgetContainer
+{
+    background:transparent;
+}
+
+/*详情窗体*/
+QWidget#widgetDetailContainer
+{
+    background-color: #404040;
+    border:0px;
+    border-bottom:1px solid #1d1d1d;
+}
+/*返回按钮*/
+QPushButton#pbBack, QPushButton#pbGoBack
+{
+    border-image: url(:/res/images/btn_batchdownload_nor.png) 3;
+    font:24px;
+    padding:5px;
+    color: #a6a6a6;
+    border:3px;
+}
+QPushButton#pbBack:hover, QPushButton#pbGoBack:hover
+{
+    border-image: url(:/res/images/btn_batchdownload_hl.png) 3;
+    font:24px;
+    padding:5px;
+    color: #d3d3d3;
+    border:3px;
+}
+QPushButton#pbBack:pressed, QPushButton#pbGoBack:pressed
+{
+    border-image: url(:/res/images/btn_batchdownload_press.png) 3;
+    font:24px;
+    padding:5px;
+    color: #a6a6a6;
+    border:3px;
+}
+
+/*相信信息 标签*/
+QLabel#labelActionTitle
+{
+    background:transparent;
+    font:18px;
+    color: #d3d3d3;
+}
+
+QLabel#labelActionDes
+{
+    background:transparent;
+    font:16px;
+    color: #d3d3d3;
+}
+
+QLabel#labelActionDate, QLabel#labelActionByWho, QLabel#labelActionSize
+{
+    background:transparent;
+    font:16px;
+    color: #a6a6a6;
+}
+/*收藏、下载、评论数按钮*/
+QPushButton#pbFavorNum
+{
+    background: transparent;
+    border: none;
+    font:14px;
+    color: #858585;
+    qproperty-icon: url(:/res/images/icon_collection.png);
+    qproperty-iconSize: 11px 10px;
+}
+QPushButton#pbDownloadNum
+{
+    background: transparent;
+    border: none;
+    font:14px;
+    color: #858585;
+    qproperty-icon: url(:/res/images/icon_download.png);
+    qproperty-iconSize: 14px 10px;
+}
+QPushButton#pbCommentNum
+{
+    background: transparent;
+    border: none;
+    font:14px;
+    color: #858585;
+    qproperty-icon: url(:/res/images/icon_comment.png);
+    qproperty-iconSize: 13px 10px;
+}
+
+QLabel#labelActDesTitle, QLabel#labelActionPreview
+{
+    background:transparent;
+    font:18px;
+    color: #a6a6a6;
+}
+QLabel#labelActAllDes
+{
+    background:transparent;
+    font:18px;
+    color: #d3d3d3;
+}
+
+/***********评论窗体开始*********/
+ActionCommentWidget
+{
+    background: transparent;
+}
+
+/*评论按钮*/
+QPushButton#pushButtonComment
+{
+    border-image: url(:/res/images/btn_comments_nor.png) 3;
+    font:18px;
+    padding:5px;
+    color: #a6a6a6;
+    border:3px;
+}
+QPushButton#pushButtonComment:hover
+{
+    border-image: url(:/res/images/btn_comment_hl.png) 3;
+    font:18px;
+    padding:5px;
+    color: #d3d3d3;
+    border:3px;
+}
+QPushButton#pushButtonComment:pressed
+{
+    border-image: url(:/res/images/btn_comments_press.png) 3;
+    font:18px;
+    padding:5px;
+    color: #a6a6a6;
+    border:3px;
+}
+
+QLabel#labelCommentText,QLabel#labelLeftBracket, QLabel#labelRightBracket
+{
+    background:transparent;
+    font:16px;
+    color: #858585;
+}
+
+QTextEdit#textEditComment
+{
+    background: transparent;
+	font:14px;
+    color:#d3d3d3;
+	border: 0px;
+}
+
+QLabel#labelCommentCnt
+{
+    background:transparent;
+    font:16px;
+    color: #d3d3d3;
+}
+
+QLabel#labelInputNumber
+{
+    background: transparent;
+	font: 14px;
+	color: #d3d3d3
+}
+
+QWidget#widgetCommentContainer
+{
+    border-image: url(:/res/images/bg_publish.png) 3;
+	border: 0px;
+}
+
+QFrame#frameCommentContainer
+{
+    background: transparent;
+	border: 0px solid #d3d3d3;
+}
+
+/*评论树*/
+QTreeView
+{
+    background: transparent;
+    border: none;
+    selection-background-color: #375171;
+}
+
+QTreeView::branch
+{
+    image:none; 
+}
+
+QTreeView::item
+{
+}
+
+QTreeView::item:selected, QTreeView::item:hover {
+    border: none;
+    background: #375171;
+}
+
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+        border-image: none;
+        image: none;
+}
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings  {
+        border-image: none;
+        image: none;
+}
+/***********评论窗体结束*********/
+
+QLabel#labelYouMayLike
+{   
+    background:transparent;
+    font:18px;
+    color: #d3d3d3;
+}
+ActionYouMayLikeWidget
+{
+    border:0px;
+}
+
+QFrame#frameLineDetailedWidget
+{
+    background: #1d1d1d;
+    border:1px solid #1d1d1d;
+}
+/**************** 动作详情 end ****************/
+
+/*************** 推荐主题、活动推广 *****************/
+ActionRecommendPage, BusinessPromoteWidget
+{
+    background: #404040;
+}
+
+QScrollArea
+{
+    background: transparent;
+	border: none;
+}
+
+QWidget#scrollAreaContentWidget
+{
+    background: transparent;
+}
+
+QTextEdit#textEditDescription
+{
+    background: #4F4F4F;
+	font:18px;
+    color: #d3d3d3;
+	border: 0px;
+}
+
+QTableWidget#tableWidgetRankList
+{
+    background:#4F4F4F;
+}
+
+QLabel#labRankList
+{
+    font: 18px;
+    color: #c0c0c0;
+}
+
+QPushButton#pbJoinIn
+{
+    border-image: url(:/res/images/btn_join_nor.png) 3;
+    font: bold 18px;
+    color:#ffffff;
+    border:3px;
+    padding:5px 15px 5px 15px;
+}
+
+QPushButton#pbJoinIn:hover
+{
+    border-image: url(:/res/images/btn_join_hl.png) 3;
+}
+
+QPushButton#pbJoinIn:pressed
+{
+    border-image: url(:/res/images/btn_join_press.png) 3;
+}
+
+CPromotePopUpWidget
+{
+    background: transparent;
+	border-image: url(:/res/images/downloadwidget_bg.png) 38px 16px 16px 16px repeat;
+    border-width: 38px 16px 16px 16px;
+}
+/*************** 推荐主题、活动推广 *****************/

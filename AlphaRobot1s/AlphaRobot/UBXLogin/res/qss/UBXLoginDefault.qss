@@ -1,0 +1,814 @@
+﻿QDialog#DialogLoginPage
+{
+    background: transparent;
+    border-image: url(:/res/images/bg_login.png) 38px 16px 16px 16px repeat;
+    border-width: 38px 16px 16px 16px;
+}
+
+
+/*关闭 按钮*/
+QPushButton#pbClose
+{
+border-image: url(:/res/images/btn_close_login.png);
+}
+QPushButton#pbClose:hover
+{
+background-image: url(:/res/images/btn_close_login.png);
+border-image: url(:/res/images/icon_close_login.png);
+}
+
+/*关闭 按钮*/
+QPushButton#pbClose_Win
+{
+    border-image: url(:/res/images/icon_win_close_nor.png);
+}
+QPushButton#pbClose_Win:hover
+{
+    border-image: url(:/res/images/icon_win_close_sel.png);
+}
+QPushButton#pbClose_Win:pressed
+{
+    border-image: url(:/res/images/icon_win_close_press.png);
+}
+
+QLabel#labelRobot
+{
+border-image: url(:/res/images/icon_head_login.png);
+}
+
+/*手机登陆按钮*/
+QPushButton#pBPhoneLogin
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+QPushButton#pBPhoneLogin:hover
+{
+    border-image: url(:/res/images/btn_login_hl.png);
+    font:14px;
+    color: #d3d3d3;
+}
+QPushButton#pBPhoneLogin:checked
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+/*邮箱登陆按钮*/
+QPushButton#pBMaiLogin
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+QPushButton#pBMaiLogin:hover
+{
+    border-image: url(:/res/images/btn_login_hl.png);
+    font:14px;
+    color: #d3d3d3;
+}
+QPushButton#pBMaiLogin:checked
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+/*按钮*/
+QPushButton#pBRegisterByPhone, QPushButton#pBRegisterByMail, QPushButton#pBLostMailPassWord, QPushButton#pBLostPhonePassword
+{
+    background: transparent;
+    font: 14px;
+    color: #d3d3d3;
+    text-align: left;
+    margin: 0px;
+}
+
+/*国家码行编辑*/
+QLineEdit#lEISO, QLineEdit#IENactionCode
+{
+    background-color: #9f9f9f;
+    color: #454545;
+    font: 14px;
+    border: 0px;
+}
+
+/*手机号码行编辑*/
+QLineEdit#lEPhoneUserName
+{
+    background-color: #9f9f9f;
+    color: #454545;
+    font: 14px;
+    border: 0px;
+}
+
+/*手机密码行编辑*/
+QLineEdit#lEPhonePassword
+{
+    background-color: #9f9f9f;
+    color: #454545;
+    font: 14px;
+    border: 0px;
+}
+
+/*邮箱名行编辑*/
+QLineEdit#lEMailUserName
+{
+    background-color: #9f9f9f;
+    color: #454545;
+    font: 14px;
+    border: 0px;
+}
+
+/*邮箱密码行编辑*/
+QLineEdit#lEMailPassword
+{
+    background-color: #9f9f9f;
+    color: #454545;
+    font: 14px;
+    border: 0px;
+}
+
+
+/************ tabWidgetLogin begin ************/
+
+QTabWidget#tabWidgetLogin::pane
+{ /* The tab widget frame */
+    border: none;
+    background: transparent;
+    margin: 0px;
+    padding: 0px;
+}
+
+QTabWidget#tabWidgetLogin::tab-bar
+{
+    alignment: center;
+    border: none;
+    background: transparent;
+    margin: 0px;
+    padding: 0px;
+}
+
+/************ tabWidgetRegister begin ************/
+QTabWidget#tabWidgetRegister::pane
+{ /* The tab widget frame */
+    border: none;
+    background: transparent;
+    margin: 0px;
+    padding: 0px;
+}
+
+QTabWidget#tabWidgetRegister::tab-bar
+{
+    alignment: center;
+    border: none;
+    background: transparent;
+    margin: 0px;
+    padding: 0px;
+}
+
+/************ tabWidgetGetPassword begin ************/
+
+QTabWidget#tabWidgetGetPassword::pane
+{ /* The tab widget frame */
+    border: none;
+    background: transparent;
+    margin: 0px;
+    padding: 0px;
+}
+
+QTabWidget#tabWidgetGetPassword::tab-bar
+{
+    alignment: center;
+    border: none;
+    background: transparent;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Style the tab using the tab sub-control. Note that
+    it reads QTabBar _not_ QTabWidget */
+QTabBar::tab
+{
+    border: 0px;
+    font:16px;
+    color: #d3d3d3;
+    min-width: 140px;
+    min-height: 25px;
+    margin: 0px;
+    padding: 2px;
+}
+
+QTabBar::tab:selected
+{
+    font:16px;
+    color: #d3d3d3;
+    margin: 0px;
+    padding: 0px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;    
+    border-bottom-color: #9f9f9f;
+}
+
+/************ tabWidgetLogin end ************/
+
+
+/************ QCheckBox begin ************/
+
+QCheckBox
+{
+    font: 14px;
+    color: #d3d3d3;
+    margin:0px 0px 0px 10px;
+}
+
+QCheckBox#checkBox_selall
+{
+    font: 14px;
+    color: #d3d3d3;
+    margin: 10px 0px 0px 10px;
+}
+
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:/res/images/cb_icon_nor_login.png);
+}
+
+QCheckBox::indicator:unchecked:pressed {
+    image: url(:/res/images/cb_icon_select_login.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(:/res/images/cb_icon_select_login.png);
+}
+
+QCheckBox:disabled
+{
+    color: #808080;
+}
+
+/************ QCheckBox end ************/
+
+/************ QLabel begin ************/
+
+QLabel#labelPLoginInfo
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelMLoginInfo
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelPUserInfo
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelMUserInfo
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelPPassWordInfo
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelMPasswordInfo
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelPhoneUserName
+{
+    color: #d3d3d3;
+    font: 14px;
+}
+
+QLabel#labelPhonePassword
+{
+    color: #d3d3d3;
+    font: 14px;
+}
+
+QLabel#labelMailUserName
+{
+    color: #d3d3d3;
+    font: 14px;
+}
+
+QLabel#labelMailPassword
+{
+    color: #d3d3d3;
+    font: 14px;
+}
+
+
+QLabel#labelCountry, QLabel#labelPhoneNum, QLabel#labelPPassword, QLabel#labelPConfirmPassword, QLabel#labelMsgCode,
+QLabel#labelMail, QLabel#labelMConfirmPassword, QLabel#labelMPassword 
+{
+    color: #d3d3d3;
+    font: 14px;
+}
+
+QLabel#labelReturn
+{
+    color: #d3d3d3;
+    font: 14px;
+}
+
+QLabel#labelPhoneNumStatus
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelPPasswordStatus
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelPConfirmPasswordStatus
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelGetMsgCodeStatus
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelMailNumStatus
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelMailPasswordStatus
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelMailPasswordAgainStatus
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+/*返回登录、注册label*/
+QLabel#labelBackLogin, QLabel#labelBackRegister
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    color: #d3d3d3;
+    font: 14px;
+}
+/************ QLabel end ************/
+
+
+/************ QComboBox begin ************/
+QComboBox#cBNation, QComboBox#cbxCountryCode
+{
+    border-left-width:0px;
+    border-right-width: 1px;
+    border-right-color: #070707;
+    border-right-style: solid;
+    border-top-width: 1px;
+    border-top-color: #070707;
+    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #070707;
+    border-bottom-style: solid;
+    background:#9f9f9f;
+    font-size:14px;
+    color:#060606;
+}
+
+QComboBox#cBNation QAbstractItemView, QComboBox#cbxCountryCode QAbstractItemView
+{
+    background: #9f9f9f;
+    selection-background-color: #365370;
+}
+
+QComboBox QAbstractItemView::item
+{
+  min-height: 28px;
+  max-height: 28px;
+}
+
+QComboBox#cBNation::drop-down, QComboBox#cbxCountryCode::drop-down
+{
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    min-width: 16px;
+    max-width: 16px;
+    border-width: 0px;
+}
+
+QComboBox#cBNation::down-arrow, QComboBox#cbxCountryCode::down-arrow
+{
+    image: url(:/res/images/icon_choice.png);
+}
+
+/************ 手机注册模块 ************/
+QLineEdit#lEPhonePasswordConfirm
+{
+    background-color: #9f9f9f;
+    color: #454545;
+    font: 14px;
+    border: 0px;
+}
+
+QLineEdit#lEMessageCode
+{
+    background-color: #9f9f9f;
+    color: #454545;
+    font: 14px;
+    border: 0px;
+}
+
+QLineEdit#lEMailPasswordConfirm
+{
+    background-color: #9f9f9f;
+    color: #454545;
+    font: 14px;
+    border: 0px;
+}
+
+/*获取短信验证码按钮*/
+QPushButton#pBGetMessageCode
+{
+    width: 90px;
+    height: 32px;
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+QPushButton#pBGetMessageCode:hover
+{
+    width: 90px;
+    height: 32px;
+    border-image: url(:/res/images/btn_login_hl.png);
+    font:14px;
+    color: #d3d3d3;
+}
+QPushButton#pBGetMessageCode:checked
+{
+    width: 90px;
+    height: 32px;
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+/*注册按钮*/
+QPushButton#pBPhoneRegister, QPushButton#pBMailRegister
+{
+    width: 138px;
+    height: 32px;
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+QPushButton#pBPhoneRegister:hover, QPushButton#pBMailRegister:hover
+{
+    width: 138px;
+    height: 32px;
+    border-image: url(:/res/images/btn_login_hl.png);
+    font:14px;
+    color: #d3d3d3;
+}
+QPushButton#pBPhoneRegister:checked, QPushButton#pBMailRegister:checked
+{
+    width: 138px;
+    height: 32px;
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+/*返回登录按钮*/
+QPushButton#pBReturnLogin, QPushButton#pBGotoRegister
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background: transparent;
+    font:14px;
+    color: #3da1ff;
+}
+/************ 手机注册模块 ************/
+
+
+
+
+/************ 找回密码模块 ************/
+QLabel#labelGetMsgCodeStatus
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QTextEdit#textEditSendPhoneMessage, QTextEdit#textEditSendMailMessage
+{
+    background: transparent;
+	margin: 0px;
+	border: 0px;
+}
+
+QLabel#labelVerifyCode
+{
+    color: #d3d3d3;
+    font: 14px;
+}
+
+QLabel#labelMailName
+{
+    color: #d3d3d3;
+    font: 14px;
+}
+
+QLabel#labelFindPassword
+{
+    color: #d3d3d3;
+    font: 20px;
+}
+
+QLabel#labelReturnLogin
+{
+    color: #d3d3d3;
+    font: 14px;
+}
+
+QLabel#labelGoToRegister
+{
+    color: #d3d3d3;
+    font: 14px;
+}
+
+QLabel#labelPhoneUserInfo
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelVerifyCodeInfo
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelMailUserInfo
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelRegisgerPhoneInfo,QLabel#labelRegisterMailInfo,QLabel#labelResetPasswordInfo
+{
+    color: #d3d3d3;
+	font: 14px;
+}
+
+QLineEdit#lEPhoneNum
+{
+    background-color: #9f9f9f;
+    color: #454545;
+    font: 14px;
+    border: 0px;
+}
+
+QLineEdit#lEVerifyCode
+{
+    background-color: #9f9f9f;
+    color: #454545;
+    font: 14px;
+    border: 0px;
+}
+
+QLineEdit#lEMailName
+{
+    background-color: #9f9f9f;
+    color: #454545;
+    font: 14px;
+    border: 0px;
+}
+
+/*手机找回密码按钮*/
+QPushButton#pBPhoneFindPassword
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+QPushButton#pBPhoneFindPassword:hover
+{
+    border-image: url(:/res/images/btn_login_hl.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+QPushButton#pBPhoneFindPassword:checked
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+/*发送短信按钮*/
+QPushButton#pBResendMsg
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    padding-left: 6px;
+    padding-right: 6px;
+    font:14px;
+    color: #d3d3d3;
+}
+
+QPushButton#pBResendMsg:hover
+{
+    border-image: url(:/res/images/btn_login_hl.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+QPushButton#pBResendMsg:checked
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+/*手机重置密码按钮*/
+QPushButton#pBResetPassword
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+QPushButton#pBResetPassword:hover
+{
+    border-image: url(:/res/images/btn_login_hl.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+QPushButton#pBResetPassword:checked
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+/*邮箱找回密码按钮*/
+QPushButton#pBMailFindPassword
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+QPushButton#pBMailFindPassword:hover
+{
+    border-image: url(:/res/images/btn_login_hl.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+QPushButton#pBMailFindPassword:checked
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+/*邮箱找回密码OK按钮*/
+QPushButton#pBFindMailPasswordOk
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+QPushButton#pBFindMailPasswordOk:hover
+{
+    border-image: url(:/res/images/btn_login_hl.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+QPushButton#pBFindMailPasswordOk:checked
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+/************ 找回密码模块 ************/
+
+
+/************ 重置密码WidgetResetPassword模块 ************/
+
+QLabel#labelPhoneNum, QLabel#labelCountryCode, QLabel#labelPhoneNum_2, QLabel#labelNewPassword, QLabel#labelConfirmPassword, QLabel#labelMailName
+{
+    color: #d3d3d3;
+    font: 14px;
+}
+
+QLabel#labResetPasswordTitle
+{
+    color: #d3d3d3;
+    font: 19px;
+}
+
+QLabel#labelPhoneNumInfo
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelPasswordInfo
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelConfirmPasswordInfo
+{
+    color: #fd4a5b;
+    font: 14px;
+}
+
+QLabel#labelResetPassword
+{
+    color: #d3d3d3;
+    font: 14px;
+}
+
+QLineEdit#lEPhonePassword
+{
+    background-color: #9f9f9f;
+    color: #454545;
+    font: 14px;
+    border: 0px;
+}
+
+QLineEdit#lEConfirmPhonePassword
+{
+    background-color: #9f9f9f;
+    color: #454545;
+    font: 14px;
+    border: 0px;
+}
+
+/*去注册按钮*/
+QPushButton#pBResetPassword
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+QPushButton#pBResetPassword:hover
+{
+    border-image: url(:/res/images/btn_login_hl.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+QPushButton#pBResetPassword:checked
+{
+    border-image: url(:/res/images/btn_login_press.png);
+    font:14px;
+    color: #d3d3d3;
+}
+
+/************ 重置密码WidgetResetPassword模块 ************/
+
+/* 记住用户名checkbox*/
+QCheckBox#cBSavePPassword, QCheckBox#cBSaveMPassword
+{
+    border: 0px;
+    margin: 0px;
+}
+
